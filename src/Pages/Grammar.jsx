@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { ArrowLeftCircle, XCircle } from "lucide-react";
+import { XCircle } from "lucide-react";
+import Navbar from "../components/navbar";
+import Footer from "../components/Footer";
 import PastContinuousImg from "../assets/Images/PastContinous.png";
 import PastPerfectImg from "../assets/Images/PastPerfect.png";
 import PastPerfectContImg from "../assets/Images/PastPerfectCont.png";
@@ -24,6 +26,11 @@ export default function Grammar() {
     "Articles",
     "Prepositions",
     "Reported Speech",
+    "Parts of Speech",
+    "Sentence Structure",
+    "Question Formation",
+    "Conditionals",
+    "Modals, Gerunds & more",
   ];
 
   // ----- ARTICLES DATA -----
@@ -702,6 +709,250 @@ export default function Grammar() {
     },
   };
 
+  const reportedSpeechData = {
+    title: "Reported Speech (Indirect Speech)",
+    english:
+      "Reported Speech is used to tell what someone said without quoting their exact words. It's also called Indirect Speech.",
+    sinhala:
+      "Reported Speech යනු වෙනත් කෙනෙකු කී දේ ඔහුගේ නිවැරදි වචන නොමැතිව අර්ථය පමණක් පවසන ආකාරයයි.",
+
+    structure: {
+      english: "Subject + Reporting Verb (said/told/asked) + that/if + clause",
+      sinhala: "කථා කරන පුද්ගලයා + කී වචනය + that / if + වාක්‍යය",
+      example: {
+        en: "He said that he was tired.",
+        si: "ඔහු කීවේ ඔහු दमවෙලා කියලා.",
+      },
+    },
+
+    notes: [
+      {
+        en: "Backshift the tense when the reporting verb is in the past.",
+        si: "Reporting verb එක අතීත කාලේ නම් tense එක එක් පියවරකින් අතීතයට යයි.",
+      },
+      {
+        en: "Pronouns and time words often change to fit the new context.",
+        si: "පුරුෂ ප්‍රනාම සහ කාල වචන නව කථනයට ගැලපෙන ලෙස වෙනස් වේ.",
+      },
+    ],
+
+    tenseChanges: [
+      { direct: "Present Simple", reported: "Past Simple" },
+      { direct: "Present Continuous", reported: "Past Continuous" },
+      { direct: "Present Perfect", reported: "Past Perfect" },
+      { direct: "Past Simple", reported: "Past Perfect" },
+      { direct: "Will", reported: "Would" },
+    ],
+
+    timePlaceWords: [
+      { direct: "today", reported: "that day" },
+      { direct: "yesterday", reported: "the day before" },
+      { direct: "tomorrow", reported: "the next day" },
+      { direct: "now", reported: "then" },
+      { direct: "here", reported: "there" },
+    ],
+
+    examples: [
+      {
+        type: "Statement",
+        direct: "He said, “I eat rice.”",
+        reported: "He said that he ate rice.",
+        sinhala: "ඔහු කීවේ ඔහු බත් කෑව කියලා.",
+      },
+      {
+        type: "Question (Yes/No)",
+        direct: "She asked, “Do you like tea?”",
+        reported: "She asked if I liked tea.",
+        sinhala: "ඇය අහලා මට තේ කැමතිද කියලා.",
+      },
+      {
+        type: "Question (WH)",
+        direct: "He asked, “Where are you going?”",
+        reported: "He asked where I was going.",
+        sinhala: "ඔහු අහලා මට කෙතෙක් යනවද කියලා.",
+      },
+      {
+        type: "Command / Request",
+        direct: "He said, “Sit down.”",
+        reported: "He told me to sit down.",
+        sinhala: "ඔහු මට බසින්න කියලා කීවා.",
+      },
+      {
+        type: "Negative Command",
+        direct: "She said, “Don’t go.”",
+        reported: "She told me not to go.",
+        sinhala: "ඇය මට යන්න එපා කියලා කීවා.",
+      },
+    ],
+
+    mistakes: [
+      {
+        wrong: "❌ He said me",
+        correct: "✅ He told me",
+        sinhala: "“said me” වැරදියි. “told me” යන්න භාවිතා කළ යුතුයි.",
+      },
+      {
+        wrong: "❌ She asked that if I come",
+        correct: "✅ She asked if I would come",
+        sinhala: "“asked that if” එකක් නැහැ.",
+      },
+      {
+        wrong: "❌ He said that “I am tired”",
+        correct: "✅ He said that he was tired",
+        sinhala: "Reported Speech එකේ උපුටා දැක්වීම් ලකුණු ඉවත් කරන්න.",
+      },
+    ],
+  };
+
+  // ----- PARTS OF SPEECH DATA -----
+  const partsOfSpeechData = {
+    title: "Parts of Speech",
+    english:
+      "Parts of Speech are the basic building blocks of English grammar. They explain the role of each word in a sentence.",
+    sinhala:
+      "Parts of Speech යනු ඉංග්‍රීසි ව්‍යාකරණයේ මූලික කොටස් වේ. ඒවා වාක්‍යයක පදයක භූමිකාව පැහැදිලි කරයි.",
+    parts: [
+      {
+        name: "Noun",
+        sinhala: "නාමපද",
+        description: "Names of people, places, things, or ideas.",
+        examples: [
+          { en: "boy, school, book", si: "කොල්ලා, පාසල, පොත" },
+          { en: "happiness, freedom", si: "සතුට, නිදහස" },
+        ],
+      },
+      {
+        name: "Pronoun",
+        sinhala: "සර්වාධාර පද",
+        description: "Replaces nouns to avoid repetition.",
+        examples: [
+          { en: "he, she, it, they", si: "ඔහු, ඇය, එය, ඔවුහු" },
+          { en: "this, that, these, those", si: "මෙය, ඒය, මෙවැනි, ඒවැනි" },
+        ],
+      },
+      {
+        name: "Verb",
+        sinhala: "ක්‍රියාව",
+        description: "Shows action or state of being.",
+        examples: [
+          { en: "run, write, is, have", si: "දුවන්න, ලියන්න, වේ, ඇත" },
+          { en: "She writes a letter.", si: "ඇය ලිපියක් ලියනවා." },
+        ],
+      },
+      {
+        name: "Adjective",
+        sinhala: "විශේෂණ",
+        description: "Describes nouns or pronouns.",
+        examples: [
+          { en: "big, red, intelligent", si: "වැඩි, රතු, බුද්ධිමත්" },
+          { en: "A tall boy.", si: "ඉහළ කොල්ලෙක්." },
+        ],
+      },
+      {
+        name: "Adverb",
+        sinhala: "ක්‍රියා විශේෂණ",
+        description: "Modifies verbs, adjectives, or other adverbs.",
+        examples: [
+          { en: "quickly, very, well", si: "වැඩිපුර, හොඳින්, ඉක්මනින්" },
+          { en: "She runs quickly.", si: "ඇය ඉක්මනින් දුවනවා." },
+        ],
+      },
+      {
+        name: "Preposition",
+        sinhala: "උපසර්ග",
+        description:
+          "Shows relationship between a noun/pronoun and another word.",
+        examples: [
+          { en: "in, on, at, between", si: "අතුළ, මත, වෙත, අතර" },
+          { en: "The book is on the table.", si: "පොත මේසය මත තිබෙනවා." },
+        ],
+      },
+      {
+        name: "Conjunction",
+        sinhala: "සම්බන්ධක",
+        description: "Connects words, phrases, or clauses.",
+        examples: [
+          { en: "and, but, because, or", si: "හා, නමුත්, නිසා, හෝ" },
+          { en: "I like tea and coffee.", si: "මම තේ සහ කෝපි කැමතියි." },
+        ],
+      },
+      {
+        name: "Interjection",
+        sinhala: "උද්ගාර පද",
+        description: "Expresses sudden emotion or feeling.",
+        examples: [
+          { en: "wow!, oh!, hey!", si: "අපූරු!, ඔහෝ!, අයියෝ!" },
+          { en: "Wow! That’s amazing.", si: "අපූරු! ඒක අමුතුයි." },
+        ],
+      },
+    ],
+    notes: [
+      {
+        en: "Understanding Parts of Speech helps in sentence building and grammar mastery.",
+        si: "Parts of Speech අවබෝධ කර ගැනීම වාක්‍ය ගොඩනැගීමේදී සහ ව්‍යාකරණ පරගාමීතාවේදී උපකාරී වේ.",
+      },
+      {
+        en: "Always identify the part of speech before forming sentences.",
+        si: "වාක්‍යය නිර්මාණය කිරීමට පෙර පදයේ භූමිකාව හඳුනා ගන්න.",
+      },
+    ],
+  };
+
+  // ----- RENDER FUNCTION -----
+  const renderPartsOfSpeech = () => (
+    <div className="bg-[#fffaf3] p-8 rounded-2xl shadow-md mt-10">
+      {/* --- Title & Intro --- */}
+      <h2 className="text-2xl font-bold text-[#d4a017] mb-2">
+        {partsOfSpeechData.title}
+      </h2>
+      <p className="text-gray-700 mb-1">{partsOfSpeechData.english}</p>
+      <p className="text-gray-600 italic mb-4">{partsOfSpeechData.sinhala}</p>
+
+      {/* --- Each Part of Speech --- */}
+      <div className="space-y-6 mb-6">
+        {partsOfSpeechData.parts.map((part, i) => (
+          <div
+            key={i}
+            className="bg-white p-5 rounded-xl shadow-sm border border-gray-200"
+          >
+            <h3 className="text-xl font-semibold text-[#d4a017] mb-2">
+              {part.name} -{" "}
+              <span className="italic text-gray-600">{part.sinhala}</span>
+            </h3>
+            <p className="text-gray-700 mb-2">{part.description}</p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {part.examples.map((ex, idx) => (
+                <div
+                  key={idx}
+                  className="bg-[#fffaf3] p-3 rounded-md border-l-4 border-[#d4a017]"
+                >
+                  <p className="text-gray-800">
+                    <strong>Example:</strong> {ex.en}
+                  </p>
+                  <p className="text-gray-600 italic">{ex.si}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* --- Notes --- */}
+      <h3 className="text-xl font-semibold text-[#b8860b] mt-6 mb-2">
+        Usage Notes
+      </h3>
+      <ul className="list-disc list-inside text-gray-700 mb-6">
+        {partsOfSpeechData.notes.map((n, i) => (
+          <li key={i}>
+            {n.en}
+            <br />
+            <span className="text-gray-600 italic">{n.si}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
   const renderTenses = () => (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
       {tenses.map((tense, index) => (
@@ -1082,12 +1333,136 @@ export default function Grammar() {
     </div>
   );
 
+  const renderReportedSpeech = () => (
+    <div className="bg-[#fffaf3] p-8 rounded-2xl shadow-md mt-10">
+      {/* --- Title & Intro --- */}
+      <h2 className="text-2xl font-bold text-[#d4a017] mb-2">
+        {reportedSpeechData.title}
+      </h2>
+      <p className="text-gray-700 mb-1">{reportedSpeechData.english}</p>
+      <p className="text-gray-600 italic mb-4">{reportedSpeechData.sinhala}</p>
+
+      {/* --- Structure --- */}
+      <h3 className="text-xl font-semibold text-[#b8860b] mt-4 mb-2">
+        Structure
+      </h3>
+      <p className="text-gray-700">{reportedSpeechData.structure.english}</p>
+      <p className="text-gray-600 italic mb-3">
+        {reportedSpeechData.structure.sinhala}
+      </p>
+      <div className="bg-[#fff] border-l-4 border-[#d4a017] p-3 rounded-md mb-4">
+        <strong>{reportedSpeechData.structure.example.en}</strong>
+        <br />
+        <span className="text-gray-600">
+          {reportedSpeechData.structure.example.si}
+        </span>
+      </div>
+
+      {/* --- Usage Notes --- */}
+      <h3 className="text-xl font-semibold text-[#b8860b] mt-6 mb-2">
+        Usage Notes
+      </h3>
+      <ul className="list-disc list-inside text-gray-700 mb-6">
+        {reportedSpeechData.notes.map((n, i) => (
+          <li key={i}>
+            {n.en}
+            <br />
+            <span className="text-gray-600 italic">{n.si}</span>
+          </li>
+        ))}
+      </ul>
+
+      {/* --- Tense Changes Table --- */}
+      <h3 className="text-xl font-semibold text-[#b8860b] mb-2">
+        Tense Changes
+      </h3>
+      <div className="overflow-x-auto mb-6">
+        <table className="w-full border border-gray-300 text-sm">
+          <thead className="bg-[#f8f3e9] text-gray-800">
+            <tr>
+              <th className="p-2 text-left">Direct Speech</th>
+              <th className="p-2 text-left">Reported Speech</th>
+            </tr>
+          </thead>
+          <tbody>
+            {reportedSpeechData.tenseChanges.map((row, i) => (
+              <tr key={i} className="border-t border-gray-300">
+                <td className="p-2">{row.direct}</td>
+                <td className="p-2">{row.reported}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* --- Time & Place Changes --- */}
+      <h3 className="text-xl font-semibold text-[#b8860b] mb-2">
+        Time & Place Word Changes
+      </h3>
+      <div className="overflow-x-auto mb-6">
+        <table className="w-full border border-gray-300 text-sm">
+          <thead className="bg-[#f8f3e9] text-gray-800">
+            <tr>
+              <th className="p-2 text-left">Direct</th>
+              <th className="p-2 text-left">Reported</th>
+            </tr>
+          </thead>
+          <tbody>
+            {reportedSpeechData.timePlaceWords.map((row, i) => (
+              <tr key={i} className="border-t border-gray-300">
+                <td className="p-2">{row.direct}</td>
+                <td className="p-2">{row.reported}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* --- Examples --- */}
+      <h3 className="text-xl font-semibold text-[#b8860b] mb-4">Examples</h3>
+      <div className="space-y-6 mb-8">
+        {reportedSpeechData.examples.map((ex, i) => (
+          <div
+            key={i}
+            className="bg-white p-5 rounded-xl shadow-sm border border-gray-200"
+          >
+            <h4 className="text-lg font-bold text-[#d4a017] mb-2">{ex.type}</h4>
+            <p className="text-gray-800">
+              <strong>Direct:</strong> {ex.direct}
+            </p>
+            <p className="text-gray-800">
+              <strong>Reported:</strong> {ex.reported}
+            </p>
+            <p className="text-gray-600 italic">{ex.sinhala}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* --- Common Mistakes --- */}
+      <h3 className="text-xl font-semibold text-[#b8860b] mb-2">
+        Common Mistakes
+      </h3>
+      {reportedSpeechData.mistakes.map((m, i) => (
+        <div
+          key={i}
+          className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-red-400 mb-4"
+        >
+          <p className="text-red-600">{m.wrong}</p>
+          <p className="text-green-600">{m.correct}</p>
+          <p className="text-gray-600 italic">{m.sinhala}</p>
+        </div>
+      ))}
+    </div>
+  );
+
   const renderContent = () => {
     if (activeTopic === "Tenses") return renderTenses();
     if (activeTopic === "Articles") return renderArticles();
     if (activeTopic === "Prepositions") return renderPrepositions();
     if (activeTopic === "Active Voice") return renderActiveVoice();
     if (activeTopic === "Passive Voice") return renderPassiveVoice();
+    if (activeTopic === "Reported Speech") return renderReportedSpeech();
+    if (activeTopic === "Parts of Speech") return renderPartsOfSpeech();
     return (
       <div className="bg-[#fffaf3] p-8 text-center rounded-xl shadow-md mt-10">
         <h2 className="text-2xl font-semibold text-[#d4a017] mb-3">
@@ -1104,17 +1479,7 @@ export default function Grammar() {
   return (
     <div className="bg-[#fdfaf5] min-h-screen text-gray-800 font-sans">
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-10 py-6 bg-[#fffaf3] shadow-sm">
-        <div className="flex items-center gap-3">
-          <ArrowLeftCircle
-            onClick={() => (window.location.href = "/")}
-            className="text-[#d4a017] w-6 h-6 cursor-pointer hover:text-[#b88d10]"
-          />
-          <h1 className="text-2xl font-bold text-[#d4a017]">
-            English සිංහලෙන්
-          </h1>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Header */}
       <section className="px-10 py-10 text-center">
@@ -1151,12 +1516,7 @@ export default function Grammar() {
       {renderPopup()}
 
       {/* Footer */}
-      <footer className="bg-[#262626] text-gray-300 py-8 text-center">
-        <p className="text-sm">
-          © {new Date().getFullYear()} English සිංහලෙන් | Learn English in
-          Sinhala 🇱🇰
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -8,42 +8,15 @@ import {
   Volume2,
   Globe,
 } from "lucide-react";
+import Navbar from "../components/navbar";
+import Footer from "../components/Footer";
+import { Button } from "../components/ui/button";
 
 const HomePage = () => {
   return (
     <div className="bg-[#fdfaf5] text-gray-900 font-sans">
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-10 py-6 bg-[#fffaf3] shadow-sm">
-        <h1 className="text-2xl font-bold text-[#d4a017]">English සිංහලෙන්</h1>
-        <div className="flex gap-8 text-[16px] font-medium">
-          <button
-            onClick={() =>
-              window.dispatchEvent(new CustomEvent("navigate-to-grammar"))
-            }
-            className="hover:text-[#d4a017] cursor-pointer transition"
-          >
-            Grammar
-          </button>
-          <a href="#vocab" className="hover:text-[#d4a017]">
-            Vocabulary
-          </a>
-          <a href="#writing" className="hover:text-[#d4a017]">
-            Writing
-          </a>
-          <a href="#speaking" className="hover:text-[#d4a017]">
-            Speaking
-          </a>
-          <a href="#quiz" className="hover:text-[#d4a017]">
-            Quizzes
-          </a>
-          <a href="#tools" className="hover:text-[#d4a017]">
-            Tools
-          </a>
-        </div>
-        <button className="bg-[#d4a017] text-white px-5 py-2 rounded-full hover:bg-[#b88d10] transition">
-          Login
-        </button>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between px-10 py-16 md:py-24 bg-[#fffaf3]">
@@ -58,9 +31,9 @@ const HomePage = () => {
             <br />
             සිංහලෙන් ඉංග්‍රීසි ඉගෙන ගන්න — ඉතා පහසුවෙන්, අදම ආරම්භ කරන්න!
           </p>
-          <button className="bg-[#d4a017] text-white px-6 py-3 rounded-full text-lg hover:bg-[#b88d10] transition">
+          <Button className="bg-[#d4a017] text-white px-6 py-3 rounded-full text-lg hover:bg-[#b88d10] transition">
             Start Learning Now
-          </button>
+          </Button>
         </div>
         <div className="mt-10 md:mt-0">
           <img
@@ -121,33 +94,13 @@ const HomePage = () => {
         <h3 className="text-3xl font-semibold mb-4">Word of the Day 🗓️</h3>
         <p className="text-2xl font-bold mb-2">Journey – ගමන</p>
         <p className="text-gray-600 mb-8">“I enjoyed the journey.”</p>
-        <button className="bg-[#d4a017] text-white px-6 py-2 rounded-full hover:bg-[#b88d10] transition">
+        <Button className="bg-[#d4a017] text-white px-6 py-2 rounded-full hover:bg-[#b88d10] transition">
           See More Words
-        </button>
+        </Button>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#262626] text-gray-300 py-10 px-10 mt-10">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <h4 className="text-xl font-semibold text-[#d4a017] mb-4 md:mb-0">
-            English සිංහලෙන්
-          </h4>
-          <div className="flex gap-6 text-sm">
-            <a href="#about" className="hover:text-[#d4a017]">
-              About
-            </a>
-            <a href="#contact" className="hover:text-[#d4a017]">
-              Contact
-            </a>
-            <a href="#privacy" className="hover:text-[#d4a017]">
-              Privacy
-            </a>
-          </div>
-        </div>
-        <p className="text-center text-xs text-gray-500 mt-6">
-          © 2025 English සිංහලෙන් — All Rights Reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 };
