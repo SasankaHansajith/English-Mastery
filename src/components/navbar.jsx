@@ -5,6 +5,10 @@ const Navbar = () => {
     window.dispatchEvent(new CustomEvent("navigate-to-home"));
   const goGrammar = () =>
     window.dispatchEvent(new CustomEvent("navigate-to-grammar"));
+  const goRoadMap = () =>
+    window.dispatchEvent(new CustomEvent("navigate-to-roadmap"));
+  const goVocabulary = () =>
+    window.dispatchEvent(new CustomEvent("navigate-to-vocabulary"));
 
   return (
     <nav className="flex justify-between items-center px-10 py-6 bg-[#fffaf3] shadow-sm">
@@ -27,9 +31,13 @@ const Navbar = () => {
         >
           Grammar
         </button>
-        <a href="#vocab" className="hover:text-[#d4a017]">
+
+        <button
+          onClick={goVocabulary}
+          className="hover:text-[#d4a017] cursor-pointer transition"
+        >
           Vocabulary
-        </a>
+        </button>
         <a href="#writing" className="hover:text-[#d4a017]">
           Writing
         </a>

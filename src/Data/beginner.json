@@ -1,0 +1,886 @@
+{
+  "beginner": [
+    {
+      "Present forms": "Go",
+      "Past Forms": "Went",
+      "Past Participles": "Gone",
+      "meaning": "යන්න"
+    },
+    {
+      "Present forms": "Come",
+      "Past Forms": "Came",
+      "Past Participles": "Come",
+      "meaning": "එන්න"
+    },
+    {
+      "Present forms": "Eat",
+      "Past Forms": "Ate",
+      "Past Participles": "Eaten",
+      "meaning": "කන්න"
+    },
+    {
+      "Present forms": "See",
+      "Past Forms": "Saw",
+      "Past Participles": "Seen",
+      "meaning": "දැක්ක"
+    },
+    {
+      "Present forms": "Run",
+      "Past Forms": "Ran",
+      "Past Participles": "Run",
+      "meaning": "දුවන්න"
+    },
+    {
+      "Present forms": "Read",
+      "Past Forms": "Read",
+      "Past Participles": "Read",
+      "meaning": "කියවන්න"
+    },
+    {
+      "Present forms": "Write",
+      "Past Forms": "Wrote",
+      "Past Participles": "Written",
+      "meaning": "ලියන්න"
+    },
+    {
+      "Present forms": "Speak",
+      "Past Forms": "Spoke",
+      "Past Participles": "Spoken",
+      "meaning": "කතා කරන්න"
+    },
+    {
+      "Present forms": "Drink",
+      "Past Forms": "Drank",
+      "Past Participles": "Drunk",
+      "meaning": "පින්න"
+    },
+    {
+      "Present forms": "Sleep",
+      "Past Forms": "Slept",
+      "Past Participles": "Slept",
+      "meaning": "නින්දට යන්න"
+    },
+    {
+      "Present forms": "Stand",
+      "Past Forms": "Stood",
+      "Past Participles": "Stood",
+      "meaning": "නගින්න"
+    },
+    {
+      "Present forms": "Sit",
+      "Past Forms": "Sat",
+      "Past Participles": "Sat",
+      "meaning": "බසින්න"
+    },
+    {
+      "Present forms": "Buy",
+      "Past Forms": "Bought",
+      "Past Participles": "Bought",
+      "meaning": "ගන්න"
+    },
+    {
+      "Present forms": "Bring",
+      "Past Forms": "Brought",
+      "Past Participles": "Brought",
+      "meaning": "ගෙන එන්න"
+    },
+    {
+      "Present forms": "Catch",
+      "Past Forms": "Caught",
+      "Past Participles": "Caught",
+      "meaning": "පිටියට ගන්න"
+    },
+    {
+      "Present forms": "Build",
+      "Past Forms": "Built",
+      "Past Participles": "Built",
+      "meaning": "ගොඩනැගිල්ලක් ඉදි කරන්න"
+    },
+    {
+      "Present forms": "Cut",
+      "Past Forms": "Cut",
+      "Past Participles": "Cut",
+      "meaning": "කපන්න"
+    },
+    {
+      "Present forms": "Draw",
+      "Past Forms": "Drew",
+      "Past Participles": "Drawn",
+      "meaning": "වියදම් කරන්න / චිත්‍ර අඳින්න"
+    },
+    {
+      "Present forms": "Feel",
+      "Past Forms": "Felt",
+      "Past Participles": "Felt",
+      "meaning": "ඇහැරෙන්න / හැඟෙන්න"
+    },
+    {
+      "Present forms": "Find",
+      "Past Forms": "Found",
+      "Past Participles": "Found",
+      "meaning": "හඳුනා ගන්න"
+    },
+    {
+      "Present forms": "Fly",
+      "Past Forms": "Flew",
+      "Past Participles": "Flown",
+      "meaning": "පියාසර කරන්න"
+    },
+    {
+      "Present forms": "Forget",
+      "Past Forms": "Forgot",
+      "Past Participles": "Forgotten",
+      "meaning": "මතක නැතිවෙන්න"
+    },
+    {
+      "Present forms": "Give",
+      "Past Forms": "Gave",
+      "Past Participles": "Given",
+      "meaning": "දෙන්න"
+    },
+    {
+      "Present forms": "Have",
+      "Past Forms": "Had",
+      "Past Participles": "Had",
+      "meaning": "ඇතිවෙන්න / තිබෙන්න"
+    },
+    {
+      "Present forms": "Hear",
+      "Past Forms": "Heard",
+      "Past Participles": "Heard",
+      "meaning": "අසන්න"
+    },
+    {
+      "Present forms": "Hold",
+      "Past Forms": "Held",
+      "Past Participles": "Held",
+      "meaning": "අල්ලාගෙන තියන්න"
+    },
+    {
+      "Present forms": "Keep",
+      "Past Forms": "Kept",
+      "Past Participles": "Kept",
+      "meaning": "තබා ගන්න"
+    },
+    {
+      "Present forms": "Know",
+      "Past Forms": "Knew",
+      "Past Participles": "Known",
+      "meaning": "දන්නවා"
+    },
+    {
+      "Present forms": "Learn",
+      "Past Forms": "Learnt",
+      "Past Participles": "Learnt",
+      "meaning": "ඉගෙන ගන්න"
+    },
+    {
+      "Present forms": "Leave",
+      "Past Forms": "Left",
+      "Past Participles": "Left",
+      "meaning": "නැති වෙන්න / පිටවන්න"
+    },
+    {
+      "Present forms": "Lose",
+      "Past Forms": "Lost",
+      "Past Participles": "Lost",
+      "meaning": "අහිමි වෙන්න"
+    },
+    {
+      "Present forms": "Make",
+      "Past Forms": "Made",
+      "Past Participles": "Made",
+      "meaning": "තනන්න / සාදන්න"
+    },
+    {
+      "Present forms": "Meet",
+      "Past Forms": "Met",
+      "Past Participles": "Met",
+      "meaning": "මුණගැසෙන්න"
+    },
+    {
+      "Present forms": "Pay",
+      "Past Forms": "Paid",
+      "Past Participles": "Paid",
+      "meaning": "ගෙවන්න"
+    },
+    {
+      "Present forms": "Put",
+      "Past Forms": "Put",
+      "Past Participles": "Put",
+      "meaning": "තැබෙන්න"
+    },
+    {
+      "Present forms": "Read",
+      "Past Forms": "Read",
+      "Past Participles": "Read",
+      "meaning": "කියවන්න"
+    },
+    {
+      "Present forms": "Say",
+      "Past Forms": "Said",
+      "Past Participles": "Said",
+      "meaning": "කියන්න"
+    },
+    {
+      "Present forms": "Sell",
+      "Past Forms": "Sold",
+      "Past Participles": "Sold",
+      "meaning": "විකුණන්න"
+    },
+    {
+      "Present forms": "Send",
+      "Past Forms": "Sent",
+      "Past Participles": "Sent",
+      "meaning": "යවන්න"
+    },
+    {
+      "Present forms": "Sing",
+      "Past Forms": "Sang",
+      "Past Participles": "Sung",
+      "meaning": "ගායනා කරන්න"
+    },
+    {
+      "Present forms": "Sit",
+      "Past Forms": "Sat",
+      "Past Participles": "Sat",
+      "meaning": "බසින්න"
+    },
+    {
+      "Present forms": "Sleep",
+      "Past Forms": "Slept",
+      "Past Participles": "Slept",
+      "meaning": "නින්ද යන්න"
+    },
+    {
+      "Present forms": "Speak",
+      "Past Forms": "Spoke",
+      "Past Participles": "Spoken",
+      "meaning": "කතා කරන්න"
+    },
+    {
+      "Present forms": "Stand",
+      "Past Forms": "Stood",
+      "Past Participles": "Stood",
+      "meaning": "නගින්න"
+    },
+    {
+      "Present forms": "Swim",
+      "Past Forms": "Swam",
+      "Past Participles": "Swum",
+      "meaning": "ඔබන්න"
+    },
+    {
+      "Present forms": "Take",
+      "Past Forms": "Took",
+      "Past Participles": "Taken",
+      "meaning": "ගන්න"
+    },
+    {
+      "Present forms": "Teach",
+      "Past Forms": "Taught",
+      "Past Participles": "Taught",
+      "meaning": "බෝධනා කරන්න"
+    },
+    {
+      "Present forms": "Tell",
+      "Past Forms": "Told",
+      "Past Participles": "Told",
+      "meaning": "පවසන්න"
+    },
+    {
+      "Present forms": "Think",
+      "Past Forms": "Thought",
+      "Past Participles": "Thought",
+      "meaning": "හිතන්න"
+    },
+    {
+      "Present forms": "Understand",
+      "Past Forms": "Understood",
+      "Past Participles": "Understood",
+      "meaning": "තේරෙන්න"
+    },
+    {
+      "Present forms": "Wear",
+      "Past Forms": "Wore",
+      "Past Participles": "Worn",
+      "meaning": "ධාරණය කරන්න"
+    },
+    {
+      "Present forms": "Win",
+      "Past Forms": "Won",
+      "Past Participles": "Won",
+      "meaning": "ජය ගන්න"
+    },
+    {
+      "Present forms": "Write",
+      "Past Forms": "Wrote",
+      "Past Participles": "Written",
+      "meaning": "ලියන්න"
+    },
+    {
+      "Present forms": "Answer",
+      "Past Forms": "Answered",
+      "Past Participles": "Answered",
+      "meaning": "පිළිතුරු දීම"
+    },
+    {
+      "Present forms": "Ask",
+      "Past Forms": "Asked",
+      "Past Participles": "Asked",
+      "meaning": "අසන්න"
+    },
+    {
+      "Present forms": "Bark",
+      "Past Forms": "Barked",
+      "Past Participles": "Barked",
+      "meaning": "බැව්ව"
+    },
+    {
+      "Present forms": "Call",
+      "Past Forms": "Called",
+      "Past Participles": "Called",
+      "meaning": "ඇමතීම"
+    },
+    {
+      "Present forms": "Clean",
+      "Past Forms": "Cleaned",
+      "Past Participles": "Cleaned",
+      "meaning": "ශුද්ධ කිරීම"
+    },
+    {
+      "Present forms": "Close",
+      "Past Forms": "Closed",
+      "Past Participles": "Closed",
+      "meaning": "වැසීම"
+    },
+    {
+      "Present forms": "Cook",
+      "Past Forms": "Cooked",
+      "Past Participles": "Cooked",
+      "meaning": "ඒපැයීම"
+    },
+    {
+      "Present forms": "Cry",
+      "Past Forms": "Cried",
+      "Past Participles": "Cried",
+      "meaning": "ඇඬීම"
+    },
+    {
+      "Present forms": "Dance",
+      "Past Forms": "Danced",
+      "Past Participles": "Danced",
+      "meaning": "නර්තනය කිරීම"
+    },
+    {
+      "Present forms": "Enjoy",
+      "Past Forms": "Enjoyed",
+      "Past Participles": "Enjoyed",
+      "meaning": "ආශා කරා"
+    },
+    {
+      "Present forms": "Explain",
+      "Past Forms": "Explained",
+      "Past Participles": "Explained",
+      "meaning": "විස්තර කරන්න"
+    },
+    {
+      "Present forms": "Finish",
+      "Past Forms": "Finished",
+      "Past Participles": "Finished",
+      "meaning": "අවසන් කරන්න"
+    },
+    {
+      "Present forms": "Fix",
+      "Past Forms": "Fixed",
+      "Past Participles": "Fixed",
+      "meaning": "ළුහුබඳින්න"
+    },
+    {
+      "Present forms": "Help",
+      "Past Forms": "Helped",
+      "Past Participles": "Helped",
+      "meaning": "උදව් කරන්න"
+    },
+    {
+      "Present forms": "Jump",
+      "Past Forms": "Jumped",
+      "Past Participles": "Jumped",
+      "meaning": "ඇදීම"
+    },
+    {
+      "Present forms": "Kick",
+      "Past Forms": "Kicked",
+      "Past Participles": "Kicked",
+      "meaning": "පාදයෙන් ගහන්න"
+    },
+    {
+      "Present forms": "Laugh",
+      "Past Forms": "Laughed",
+      "Past Participles": "Laughed",
+      "meaning": "හෙළිවෙමින් සිනහව"
+    },
+    {
+      "Present forms": "Like",
+      "Past Forms": "Liked",
+      "Past Participles": "Liked",
+      "meaning": "කමතීම"
+    },
+    {
+      "Present forms": "Live",
+      "Past Forms": "Lived",
+      "Past Participles": "Lived",
+      "meaning": "ජීවත් වීම"
+    },
+    {
+      "Present forms": "Look",
+      "Past Forms": "Looked",
+      "Past Participles": "Looked",
+      "meaning": "නරඹන්න"
+    },
+    {
+      "Present forms": "Love",
+      "Past Forms": "Loved",
+      "Past Participles": "Loved",
+      "meaning": "ආදරය කරන්න"
+    },
+    {
+      "Present forms": "Need",
+      "Past Forms": "Needed",
+      "Past Participles": "Needed",
+      "meaning": "අවශ්‍ය වීම"
+    },
+    {
+      "Present forms": "Open",
+      "Past Forms": "Opened",
+      "Past Participles": "Opened",
+      "meaning": "විවෘත කරන්න"
+    },
+    {
+      "Present forms": "Play",
+      "Past Forms": "Played",
+      "Past Participles": "Played",
+      "meaning": "ක්‍රීඩා කරන්න"
+    },
+    {
+      "Present forms": "Pull",
+      "Past Forms": "Pulled",
+      "Past Participles": "Pulled",
+      "meaning": "ඇදීම"
+    },
+    {
+      "Present forms": "Push",
+      "Past Forms": "Pushed",
+      "Past Participles": "Pushed",
+      "meaning": "තල්ලු කිරීම"
+    },
+    {
+      "Present forms": "Rain",
+      "Past Forms": "Rained",
+      "Past Participles": "Rained",
+      "meaning": "වර්ෂාව වීම"
+    },
+    {
+      "Present forms": "Reach",
+      "Past Forms": "Reached",
+      "Past Participles": "Reached",
+      "meaning": "ලඟා වීම"
+    },
+    {
+      "Present forms": "Remember",
+      "Past Forms": "Remembered",
+      "Past Participles": "Remembered",
+      "meaning": "මතක තබා ගැනීම"
+    },
+    {
+      "Present forms": "Return",
+      "Past Forms": "Returned",
+      "Past Participles": "Returned",
+      "meaning": "ආපසු එන්න"
+    },
+    {
+      "Present forms": "Shout",
+      "Past Forms": "Shouted",
+      "Past Participles": "Shouted",
+      "meaning": "ඇහැර ගෑයීම"
+    },
+    {
+      "Present forms": "Smile",
+      "Past Forms": "Smiled",
+      "Past Participles": "Smiled",
+      "meaning": "සිනහවීම"
+    },
+    {
+      "Present forms": "Start",
+      "Past Forms": "Started",
+      "Past Participles": "Started",
+      "meaning": "ආරම්භ කරන්න"
+    },
+    {
+      "Present forms": "Stop",
+      "Past Forms": "Stopped",
+      "Past Participles": "Stopped",
+      "meaning": "නවත්වන්න"
+    },
+    {
+      "Present forms": "Talk",
+      "Past Forms": "Talked",
+      "Past Participles": "Talked",
+      "meaning": "කතා කරන්න"
+    },
+    {
+      "Present forms": "Travel",
+      "Past Forms": "Travelled",
+      "Past Participles": "Travelled",
+      "meaning": "ගමන් කරන්න"
+    },
+    {
+      "Present forms": "Try",
+      "Past Forms": "Tried",
+      "Past Participles": "Tried",
+      "meaning": "ප්‍රයත්නය කරන්න"
+    },
+    {
+      "Present forms": "Turn",
+      "Past Forms": "Turned",
+      "Past Participles": "Turned",
+      "meaning": "වංචනය/ හැරවීම"
+    },
+    {
+      "Present forms": "Use",
+      "Past Forms": "Used",
+      "Past Participles": "Used",
+      "meaning": "භාවිතා කරන්න"
+    },
+    {
+      "Present forms": "Wait",
+      "Past Forms": "Waited",
+      "Past Participles": "Waited",
+      "meaning": "රැඳී සිටීම"
+    },
+    {
+      "Present forms": "Walk",
+      "Past Forms": "Walked",
+      "Past Participles": "Walked",
+      "meaning": "පයින් යන්න"
+    },
+    {
+      "Present forms": "Want",
+      "Past Forms": "Wanted",
+      "Past Participles": "Wanted",
+      "meaning": "ඇවැසි වීම"
+    },
+    {
+      "Present forms": "Wash",
+      "Past Forms": "Washed",
+      "Past Participles": "Washed",
+      "meaning": "බාත් කරන්න"
+    },
+    {
+      "Present forms": "Watch",
+      "Past Forms": "Watched",
+      "Past Participles": "Watched",
+      "meaning": "නරඹන්න"
+    },
+    {
+      "Present forms": "Work",
+      "Past Forms": "Worked",
+      "Past Participles": "Worked",
+      "meaning": "වැඩ කරන්න"
+    },
+    {
+      "Present forms": "Open",
+      "Past Forms": "Opened",
+      "Past Participles": "Opened",
+      "meaning": "විවෘත කරන්න"
+    },
+    {
+      "Present forms": "Ask",
+      "Past Forms": "Asked",
+      "Past Participles": "Asked",
+      "meaning": "අසන්න"
+    },
+    {
+      "Present forms": "Bake",
+      "Past Forms": "Baked",
+      "Past Participles": "Baked",
+      "meaning": "බේකර් කරන්න"
+    },
+    {
+      "Present forms": "Brush",
+      "Past Forms": "Brushed",
+      "Past Participles": "Brushed",
+      "meaning": "බ්‍රෂ් කරන්න"
+    },
+    {
+      "Present forms": "Change",
+      "Past Forms": "Changed",
+      "Past Participles": "Changed",
+      "meaning": "වෙනස් කරන්න"
+    },
+    {
+      "Present forms": "Climb",
+      "Past Forms": "Climbed",
+      "Past Participles": "Climbed",
+      "meaning": "ඉස්සෙල්ලා යන්න"
+    },
+    {
+      "Present forms": "Collect",
+      "Past Forms": "Collected",
+      "Past Participles": "Collected",
+      "meaning": "සංග්‍රහ කරන්න"
+    },
+    {
+      "Present forms": "Compare",
+      "Past Forms": "Compared",
+      "Past Participles": "Compared",
+      "meaning": "සමීක්ෂණය කරන්න"
+    },
+    {
+      "Present forms": "Count",
+      "Past Forms": "Counted",
+      "Past Participles": "Counted",
+      "meaning": "ගණන් කරන්න"
+    },
+    {
+      "Present forms": "Dance",
+      "Past Forms": "Danced",
+      "Past Participles": "Danced",
+      "meaning": "නර්තනය කරන්න"
+    },
+    {
+      "Present forms": "Deliver",
+      "Past Forms": "Delivered",
+      "Past Participles": "Delivered",
+      "meaning": "බෙදා හැරීම"
+    },
+    {
+      "Present forms": "Design",
+      "Past Forms": "Designed",
+      "Past Participles": "Designed",
+      "meaning": "නිර්මාණය කරන්න"
+    },
+    {
+      "Present forms": "Develop",
+      "Past Forms": "Developed",
+      "Past Participles": "Developed",
+      "meaning": "ව්‍යවස්ථා ගත කරන්න"
+    },
+    {
+      "Present forms": "Enjoy",
+      "Past Forms": "Enjoyed",
+      "Past Participles": "Enjoyed",
+      "meaning": "ආශා කරන්න"
+    },
+    {
+      "Present forms": "Fix",
+      "Past Forms": "Fixed",
+      "Past Participles": "Fixed",
+      "meaning": "ළුහුබඳින්න"
+    },
+    {
+      "Present forms": "Follow",
+      "Past Forms": "Followed",
+      "Past Participles": "Followed",
+      "meaning": "අනුගමනය කරන්න"
+    },
+    {
+      "Present forms": "Guess",
+      "Past Forms": "Guessed",
+      "Past Participles": "Guessed",
+      "meaning": "ඇස්තමේන්තු කරන්න"
+    },
+    {
+      "Present forms": "Happen",
+      "Past Forms": "Happened",
+      "Past Participles": "Happened",
+      "meaning": "සිදුවෙන්න"
+    },
+    {
+      "Present forms": "Help",
+      "Past Forms": "Helped",
+      "Past Participles": "Helped",
+      "meaning": "උදව් කරන්න"
+    },
+    {
+      "Present forms": "Imagine",
+      "Past Forms": "Imagined",
+      "Past Participles": "Imagined",
+      "meaning": "ඇදහිල්ලෙන් සිතන්න"
+    },
+    {
+      "Present forms": "Invite",
+      "Past Forms": "Invited",
+      "Past Participles": "Invited",
+      "meaning": "ඇරයන්න"
+    },
+    {
+      "Present forms": "Join",
+      "Past Forms": "Joined",
+      "Past Participles": "Joined",
+      "meaning": "එක්වන්න"
+    },
+    {
+      "Present forms": "Learn",
+      "Past Forms": "Learned",
+      "Past Participles": "Learned",
+      "meaning": "ඉගෙන ගන්න"
+    },
+    {
+      "Present forms": "Listen",
+      "Past Forms": "Listened",
+      "Past Participles": "Listened",
+      "meaning": "ඇහුම්කන් දෙන්න"
+    },
+    {
+      "Present forms": "Love",
+      "Past Forms": "Loved",
+      "Past Participles": "Loved",
+      "meaning": "ආදරය කරන්න"
+    },
+    {
+      "Present forms": "Move",
+      "Past Forms": "Moved",
+      "Past Participles": "Moved",
+      "meaning": "ගෙනයන්න/ඇදීම"
+    },
+    {
+      "Present forms": "Need",
+      "Past Forms": "Needed",
+      "Past Participles": "Needed",
+      "meaning": "අවශ්‍ය වීම"
+    },
+    {
+      "Present forms": "Open",
+      "Past Forms": "Opened",
+      "Past Participles": "Opened",
+      "meaning": "විවෘත කරන්න"
+    },
+    {
+      "Present forms": "Paint",
+      "Past Forms": "Painted",
+      "Past Participles": "Painted",
+      "meaning": "ඇඳීම"
+    },
+    {
+      "Present forms": "Plan",
+      "Past Forms": "Planned",
+      "Past Participles": "Planned",
+      "meaning": " සැලසුම් කරන්න"
+    },
+    {
+      "Present forms": "Plant",
+      "Past Forms": "Planted",
+      "Past Participles": "Planted",
+      "meaning": "ලඟා කිරීම / වගා කරන්න"
+    },
+    {
+      "Present forms": "Play",
+      "Past Forms": "Played",
+      "Past Participles": "Played",
+      "meaning": "ක්‍රීඩා කරන්න"
+    },
+    {
+      "Present forms": "Rain",
+      "Past Forms": "Rained",
+      "Past Participles": "Rained",
+      "meaning": "වර්ෂාව වීම"
+    },
+    {
+      "Present forms": "Remember",
+      "Past Forms": "Remembered",
+      "Past Participles": "Remembered",
+      "meaning": "මතක තබා ගන්න"
+    },
+    {
+      "Present forms": "Return",
+      "Past Forms": "Returned",
+      "Past Participles": "Returned",
+      "meaning": "ආපසු එන්න"
+    },
+    {
+      "Present forms": "Smile",
+      "Past Forms": "Smiled",
+      "Past Participles": "Smiled",
+      "meaning": "සිනහවීම"
+    },
+    {
+      "Present forms": "Start",
+      "Past Forms": "Started",
+      "Past Participles": "Started",
+      "meaning": "ආරම්භ කරන්න"
+    },
+    {
+      "Present forms": "Stop",
+      "Past Forms": "Stopped",
+      "Past Participles": "Stopped",
+      "meaning": "නවත්වන්න"
+    },
+    {
+      "Present forms": "Talk",
+      "Past Forms": "Talked",
+      "Past Participles": "Talked",
+      "meaning": "කතා කරන්න"
+    },
+    {
+      "Present forms": "Travel",
+      "Past Forms": "Travelled",
+      "Past Participles": "Travelled",
+      "meaning": "ගමන් කරන්න"
+    },
+    {
+      "Present forms": "Turn",
+      "Past Forms": "Turned",
+      "Past Participles": "Turned",
+      "meaning": "හැරවීම"
+    },
+    {
+      "Present forms": "Use",
+      "Past Forms": "Used",
+      "Past Participles": "Used",
+      "meaning": "භාවිතා කරන්න"
+    },
+    {
+      "Present forms": "Wait",
+      "Past Forms": "Waited",
+      "Past Participles": "Waited",
+      "meaning": "රැඳී සිටීම"
+    },
+    {
+      "Present forms": "Walk",
+      "Past Forms": "Walked",
+      "Past Participles": "Walked",
+      "meaning": "පයින් යන්න"
+    },
+    {
+      "Present forms": "Wash",
+      "Past Forms": "Washed",
+      "Past Participles": "Washed",
+      "meaning": "බාත් කරන්න"
+    },
+    {
+      "Present forms": "Work",
+      "Past Forms": "Worked",
+      "Past Participles": "Worked",
+      "meaning": "වැඩ කරන්න"
+    },
+    {
+      "Present forms": "Visit",
+      "Past Forms": "Visited",
+      "Past Participles": "Visited",
+      "meaning": "සංචාරය කරන්න"
+    },
+    {
+      "Present forms": "Watch",
+      "Past Forms": "Watched",
+      "Past Participles": "Watched",
+      "meaning": "නරඹන්න"
+    },
+    {
+      "Present forms": "Want",
+      "Past Forms": "Wanted",
+      "Past Participles": "Wanted",
+      "meaning": "ඇවැසි වීම"
+    }
+  ]
+}

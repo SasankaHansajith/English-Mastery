@@ -1,0 +1,640 @@
+{
+  "intermediate": [
+    {
+      "Present forms": "Begin",
+      "Past Forms": "Began",
+      "Past Participles": "Begun",
+      "meaning": "ආරම්භ කරන්න"
+    },
+    {
+      "Present forms": "Break",
+      "Past Forms": "Broke",
+      "Past Participles": "Broken",
+      "meaning": "කඩන්න"
+    },
+    {
+      "Present forms": "Choose",
+      "Past Forms": "Chose",
+      "Past Participles": "Chosen",
+      "meaning": "තෝරන්න"
+    },
+    {
+      "Present forms": "Drive",
+      "Past Forms": "Drove",
+      "Past Participles": "Driven",
+      "meaning": "රිය යවන්න"
+    },
+    {
+      "Present forms": "Become",
+      "Past Forms": "Became",
+      "Past Participles": "Become",
+      "meaning": "වෙන්න"
+    },
+    {
+      "Present forms": "Bring",
+      "Past Forms": "Brought",
+      "Past Participles": "Brought",
+      "meaning": "ගෙන එන්න"
+    },
+    {
+      "Present forms": "Build",
+      "Past Forms": "Built",
+      "Past Participles": "Built",
+      "meaning": "ගොඩනගන්න"
+    },
+    {
+      "Present forms": "Catch",
+      "Past Forms": "Caught",
+      "Past Participles": "Caught",
+      "meaning": "බිඳගන්න"
+    },
+    {
+      "Present forms": "Cost",
+      "Past Forms": "Cost",
+      "Past Participles": "Cost",
+      "meaning": "මිල විය"
+    },
+    {
+      "Present forms": "Cut",
+      "Past Forms": "Cut",
+      "Past Participles": "Cut",
+      "meaning": "කපන්න"
+    },
+    {
+      "Present forms": "Deal",
+      "Past Forms": "Dealt",
+      "Past Participles": "Dealt",
+      "meaning": "ගනුදෙනු කරන්න"
+    },
+    {
+      "Present forms": "Dig",
+      "Past Forms": "Dug",
+      "Past Participles": "Dug",
+      "meaning": "ඇරීම"
+    },
+    {
+      "Present forms": "Draw",
+      "Past Forms": "Drew",
+      "Past Participles": "Drawn",
+      "meaning": "ඇඳීම"
+    },
+    {
+      "Present forms": "Drink",
+      "Past Forms": "Drank",
+      "Past Participles": "Drunk",
+      "meaning": "පානය කරන්න"
+    },
+    {
+      "Present forms": "Fall",
+      "Past Forms": "Fell",
+      "Past Participles": "Fallen",
+      "meaning": "වැටීම"
+    },
+    {
+      "Present forms": "Feed",
+      "Past Forms": "Fed",
+      "Past Participles": "Fed",
+      "meaning": "පෝෂණය කරන්න"
+    },
+    {
+      "Present forms": "Feel",
+      "Past Forms": "Felt",
+      "Past Participles": "Felt",
+      "meaning": "අනുഭവ කරන්න"
+    },
+    {
+      "Present forms": "Fight",
+      "Past Forms": "Fought",
+      "Past Participles": "Fought",
+      "meaning": "යුද්ධ කරන්න"
+    },
+    {
+      "Present forms": "Find",
+      "Past Forms": "Found",
+      "Past Participles": "Found",
+      "meaning": "සොයන්න"
+    },
+    {
+      "Present forms": "Fly",
+      "Past Forms": "Flew",
+      "Past Participles": "Flown",
+      "meaning": "පියාසර කරන්න"
+    },
+    {
+      "Present forms": "Forget",
+      "Past Forms": "Forgot",
+      "Past Participles": "Forgotten",
+      "meaning": "මතක නැතිවෙන්න"
+    },
+    {
+      "Present forms": "Freeze",
+      "Past Forms": "Froze",
+      "Past Participles": "Frozen",
+      "meaning": "සීතල වෙන්න"
+    },
+    {
+      "Present forms": "Get",
+      "Past Forms": "Got",
+      "Past Participles": "Got/Gotten",
+      "meaning": "ලැබෙන්න"
+    },
+    {
+      "Present forms": "Give",
+      "Past Forms": "Gave",
+      "Past Participles": "Given",
+      "meaning": "දෙන්න"
+    },
+    {
+      "Present forms": "Grow",
+      "Past Forms": "Grew",
+      "Past Participles": "Grown",
+      "meaning": "වැඩෙන්න"
+    },
+    {
+      "Present forms": "Hang",
+      "Past Forms": "Hung",
+      "Past Participles": "Hung",
+      "meaning": "ඇදීම /แขวน"
+    },
+    {
+      "Present forms": "Hear",
+      "Past Forms": "Heard",
+      "Past Participles": "Heard",
+      "meaning": "ඇහුම්කන් දෙන්න"
+    },
+    {
+      "Present forms": "Hold",
+      "Past Forms": "Held",
+      "Past Participles": "Held",
+      "meaning": "අල්ලා ගන්න"
+    },
+    {
+      "Present forms": "Keep",
+      "Past Forms": "Kept",
+      "Past Participles": "Kept",
+      "meaning": "තබා ගන්න"
+    },
+    {
+      "Present forms": "Know",
+      "Past Forms": "Knew",
+      "Past Participles": "Known",
+      "meaning": "දන්නවා"
+    },
+    {
+      "Present forms": "Lead",
+      "Past Forms": "Led",
+      "Past Participles": "Led",
+      "meaning": "නැගෙනුත් කරන්න"
+    },
+    {
+      "Present forms": "Leave",
+      "Past Forms": "Left",
+      "Past Participles": "Left",
+      "meaning": "හැර යන්න"
+    },
+    {
+      "Present forms": "Lend",
+      "Past Forms": "Lent",
+      "Past Participles": "Lent",
+      "meaning": "අය දීම"
+    },
+    {
+      "Present forms": "Let",
+      "Past Forms": "Let",
+      "Past Participles": "Let",
+      "meaning": "අනුමත කරන්න"
+    },
+    {
+      "Present forms": "Lose",
+      "Past Forms": "Lost",
+      "Past Participles": "Lost",
+      "meaning": "අහිමිවෙන්න"
+    },
+    {
+      "Present forms": "Make",
+      "Past Forms": "Made",
+      "Past Participles": "Made",
+      "meaning": "තැනීම / සෑදීම"
+    },
+    {
+      "Present forms": "Mean",
+      "Past Forms": "Meant",
+      "Past Participles": "Meant",
+      "meaning": "අරුත් දැක්වීම"
+    },
+    {
+      "Present forms": "Meet",
+      "Past Forms": "Met",
+      "Past Participles": "Met",
+      "meaning": "මුණගැසීම"
+    },
+    {
+      "Present forms": "Pay",
+      "Past Forms": "Paid",
+      "Past Participles": "Paid",
+      "meaning": "ගෙවන්න"
+    },
+    {
+      "Present forms": "Put",
+      "Past Forms": "Put",
+      "Past Participles": "Put",
+      "meaning": "තබන්න"
+    },
+    {
+      "Present forms": "Read",
+      "Past Forms": "Read",
+      "Past Participles": "Read",
+      "meaning": "කියවන්න"
+    },
+    {
+      "Present forms": "Ride",
+      "Past Forms": "Rode",
+      "Past Participles": "Ridden",
+      "meaning": "සවිකර යන්න"
+    },
+    {
+      "Present forms": "Ring",
+      "Past Forms": "Rang",
+      "Past Participles": "Rung",
+      "meaning": "ඇමතුම් කරන්න / වාදනය"
+    },
+    {
+      "Present forms": "Rise",
+      "Past Forms": "Rose",
+      "Past Participles": "Risen",
+      "meaning": "ඉහළ යන්න"
+    },
+    {
+      "Present forms": "Run",
+      "Past Forms": "Ran",
+      "Past Participles": "Run",
+      "meaning": "දුවන්න"
+    },
+    {
+      "Present forms": "Say",
+      "Past Forms": "Said",
+      "Past Participles": "Said",
+      "meaning": "කියන්න"
+    },
+    {
+      "Present forms": "See",
+      "Past Forms": "Saw",
+      "Past Participles": "Seen",
+      "meaning": "දකිනවා"
+    },
+    {
+      "Present forms": "Sell",
+      "Past Forms": "Sold",
+      "Past Participles": "Sold",
+      "meaning": "විකිණීම"
+    },
+    {
+      "Present forms": "Send",
+      "Past Forms": "Sent",
+      "Past Participles": "Sent",
+      "meaning": "යවන්න"
+    },
+    {
+      "Present forms": "Set",
+      "Past Forms": "Set",
+      "Past Participles": "Set",
+      "meaning": "ස්ථාපනය කරන්න"
+    },
+    {
+      "Present forms": "Shake",
+      "Past Forms": "Shook",
+      "Past Participles": "Shaken",
+      "meaning": "කම්පනය කරන්න"
+    },
+    {
+      "Present forms": "Shoot",
+      "Past Forms": "Shot",
+      "Past Participles": "Shot",
+      "meaning": "ගහන්න / වෙඩි තැබීම"
+    },
+    {
+      "Present forms": "Show",
+      "Past Forms": "Showed",
+      "Past Participles": "Shown",
+      "meaning": "පෙන්වන්න"
+    },
+    {
+      "Present forms": "Sing",
+      "Past Forms": "Sang",
+      "Past Participles": "Sung",
+      "meaning": "ගායනය කරන්න"
+    },
+    {
+      "Present forms": "Sit",
+      "Past Forms": "Sat",
+      "Past Participles": "Sat",
+      "meaning": "ඇඳීම"
+    },
+    {
+      "Present forms": "Sleep",
+      "Past Forms": "Slept",
+      "Past Participles": "Slept",
+      "meaning": "නිදාගන්න"
+    },
+    {
+      "Present forms": "Speak",
+      "Past Forms": "Spoke",
+      "Past Participles": "Spoken",
+      "meaning": "කතා කරන්න"
+    },
+    {
+      "Present forms": "Spend",
+      "Past Forms": "Spent",
+      "Past Participles": "Spent",
+      "meaning": "වියදම් කරන්න"
+    },
+    {
+      "Present forms": "Stand",
+      "Past Forms": "Stood",
+      "Past Participles": "Stood",
+      "meaning": "ඇඳිම"
+    },
+    {
+      "Present forms": "Steal",
+      "Past Forms": "Stole",
+      "Past Participles": "Stolen",
+      "meaning": "මුරකරු වීම"
+    },
+    {
+      "Present forms": "Swim",
+      "Past Forms": "Swam",
+      "Past Participles": "Swum",
+      "meaning": "ඔබන්න"
+    },
+    {
+      "Present forms": "Take",
+      "Past Forms": "Took",
+      "Past Participles": "Taken",
+      "meaning": "ගෙන යන්න"
+    },
+    {
+      "Present forms": "Teach",
+      "Past Forms": "Taught",
+      "Past Participles": "Taught",
+      "meaning": "ඉගැන්වීම"
+    },
+    {
+      "Present forms": "Tell",
+      "Past Forms": "Told",
+      "Past Participles": "Told",
+      "meaning": "පවසන්න"
+    },
+    {
+      "Present forms": "Think",
+      "Past Forms": "Thought",
+      "Past Participles": "Thought",
+      "meaning": "සිතන්න"
+    },
+    {
+      "Present forms": "Throw",
+      "Past Forms": "Threw",
+      "Past Participles": "Thrown",
+      "meaning": "එറിയන්න"
+    },
+    {
+      "Present forms": "Understand",
+      "Past Forms": "Understood",
+      "Past Participles": "Understood",
+      "meaning": "තේරුම් ගන්න"
+    },
+    {
+      "Present forms": "Wear",
+      "Past Forms": "Wore",
+      "Past Participles": "Worn",
+      "meaning": "ධාරණය කරන්න"
+    },
+    {
+      "Present forms": "Win",
+      "Past Forms": "Won",
+      "Past Participles": "Won",
+      "meaning": "ජය ගන්න"
+    },
+    {
+      "Present forms": "Write",
+      "Past Forms": "Wrote",
+      "Past Participles": "Written",
+      "meaning": "ලියන්න"
+    },
+    {
+      "Present forms": "Arise",
+      "Past Forms": "Arose",
+      "Past Participles": "Arisen",
+      "meaning": "උත්පන්න වීම"
+    },
+    {
+      "Present forms": "Bite",
+      "Past Forms": "Bit",
+      "Past Participles": "Bitten",
+      "meaning": "කැවීම"
+    },
+    {
+      "Present forms": "Bleed",
+      "Past Forms": "Bled",
+      "Past Participles": "Bled",
+      "meaning": "ලේ වීම"
+    },
+    {
+      "Present forms": "Blow",
+      "Past Forms": "Blew",
+      "Past Participles": "Blown",
+      "meaning": "හමන්න"
+    },
+    {
+      "Present forms": "Broadcast",
+      "Past Forms": "Broadcast",
+      "Past Participles": "Broadcast",
+      "meaning": "ප්‍රචාරය කරන්න"
+    },
+    {
+      "Present forms": "Burn",
+      "Past Forms": "Burnt",
+      "Past Participles": "Burnt",
+      "meaning": "දහනය වීම"
+    },
+    {
+      "Present forms": "Creep",
+      "Past Forms": "Crept",
+      "Past Participles": "Crept",
+      "meaning": "පcrawl කරන්න"
+    },
+    {
+      "Present forms": "Deal",
+      "Past Forms": "Dealt",
+      "Past Participles": "Dealt",
+      "meaning": "ගනුදෙනු"
+    },
+    {
+      "Present forms": "Dive",
+      "Past Forms": "Dove",
+      "Past Participles": "Dived",
+      "meaning": "ඔබා ගමන්"
+    },
+    {
+      "Present forms": "Flee",
+      "Past Forms": "Fled",
+      "Past Participles": "Fled",
+      "meaning": "පලා යන්න"
+    },
+    {
+      "Present forms": "Forbid",
+      "Past Forms": "Forbade",
+      "Past Participles": "Forbidden",
+      "meaning": "තහනම් කරන්න"
+    },
+    {
+      "Present forms": "Forgive",
+      "Past Forms": "Forgave",
+      "Past Participles": "Forgiven",
+      "meaning": "කනගාටු වන්න"
+    },
+    {
+      "Present forms": "Hide",
+      "Past Forms": "Hid",
+      "Past Participles": "Hidden",
+      "meaning": "සඟවන්න"
+    },
+    {
+      "Present forms": "Lay",
+      "Past Forms": "Laid",
+      "Past Participles": "Laid",
+      "meaning": "පැමිණීම / තැබීම"
+    },
+    {
+      "Present forms": "Light",
+      "Past Forms": "Lit",
+      "Past Participles": "Lit",
+      "meaning": "දල්වන්න"
+    },
+    {
+      "Present forms": "Mistake",
+      "Past Forms": "Mistook",
+      "Past Participles": "Mistaken",
+      "meaning": "දෝෂ කරන්න"
+    },
+    {
+      "Present forms": "Overcome",
+      "Past Forms": "Overcame",
+      "Past Participles": "Overcome",
+      "meaning": "ජය ගන්න"
+    },
+    {
+      "Present forms": "Prove",
+      "Past Forms": "Proved",
+      "Past Participles": "Proven",
+      "meaning": "සනාථ කරන්න"
+    },
+    {
+      "Present forms": "Quit",
+      "Past Forms": "Quit",
+      "Past Participles": "Quit",
+      "meaning": "නවත්වන්න"
+    },
+    {
+      "Present forms": "Seek",
+      "Past Forms": "Sought",
+      "Past Participles": "Sought",
+      "meaning": "සොයන්න"
+    },
+    {
+      "Present forms": "Sew",
+      "Past Forms": "Sewed",
+      "Past Participles": "Sewn",
+      "meaning": "හීයන්න"
+    },
+    {
+      "Present forms": "Sink",
+      "Past Forms": "Sank",
+      "Past Participles": "Sunk",
+      "meaning": "මඟ වීම / බිඳ වැටීම"
+    },
+    {
+      "Present forms": "Slide",
+      "Past Forms": "Slid",
+      "Past Participles": "Slid",
+      "meaning": "සරන්න"
+    },
+    {
+      "Present forms": "Smell",
+      "Past Forms": "Smelt",
+      "Past Participles": "Smelt",
+      "meaning": "සුගඳ දැනීම"
+    },
+    {
+      "Present forms": "Spell",
+      "Past Forms": "Spelt",
+      "Past Participles": "Spelt",
+      "meaning": "අකුරු කිරීම"
+    },
+    {
+      "Present forms": "Spit",
+      "Past Forms": "Spat",
+      "Past Participles": "Spat",
+      "meaning": "තුමන්න"
+    },
+    {
+      "Present forms": "Spread",
+      "Past Forms": "Spread",
+      "Past Participles": "Spread",
+      "meaning": "ප්‍රසාරණය"
+    },
+    {
+      "Present forms": "Stick",
+      "Past Forms": "Stuck",
+      "Past Participles": "Stuck",
+      "meaning": "අට්ටාලය"
+    },
+    {
+      "Present forms": "Strike",
+      "Past Forms": "Struck",
+      "Past Participles": "Struck",
+      "meaning": "ඇනවීම / පහර දීම"
+    },
+    {
+      "Present forms": "Swear",
+      "Past Forms": "Swore",
+      "Past Participles": "Sworn",
+      "meaning": "ඇළුම"
+    },
+    {
+      "Present forms": "Sweep",
+      "Past Forms": "Swept",
+      "Past Participles": "Swept",
+      "meaning": "පිරිසිදු කරන්න"
+    },
+    {
+      "Present forms": "Swing",
+      "Past Forms": "Swung",
+      "Past Participles": "Swung",
+      "meaning": "ලෝලනය වීම"
+    },
+    {
+      "Present forms": "Tear",
+      "Past Forms": "Tore",
+      "Past Participles": "Torn",
+      "meaning": "කපන්න / අහුලන්න"
+    },
+    {
+      "Present forms": "Wake",
+      "Past Forms": "Woke",
+      "Past Participles": "Woken",
+      "meaning": "එදීම"
+    },
+    {
+      "Present forms": "Weep",
+      "Past Forms": "Wept",
+      "Past Participles": "Wept",
+      "meaning": "ඇඬීම"
+    },
+    {
+      "Present forms": "Withdraw",
+      "Past Forms": "Withdrew",
+      "Past Participles": "Withdrawn",
+      "meaning": "ආපසු ගන්න"
+    }
+  ]
+}
