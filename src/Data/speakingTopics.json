@@ -1,0 +1,23 @@
+{
+  "beginner": [
+    "Describe your family",
+    "Talk about your daily routine",
+    "What is your favorite food?",
+    "Describe your hometown",
+    "What do you do on weekends?"
+  ],
+  "intermediate": [
+    "Describe a memorable trip you took",
+    "What are the advantages of technology?",
+    "How do you stay healthy?",
+    "What’s the importance of learning English?",
+    "Discuss your favorite movie or book"
+  ],
+  "advanced": [
+    "Discuss the impact of social media on society",
+    "What are the challenges of globalization?",
+    "How does climate change affect your country?",
+    "Should governments control AI development?",
+    "What are the pros and cons of online education?"
+  ]
+}
