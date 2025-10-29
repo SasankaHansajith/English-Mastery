@@ -4,27 +4,72 @@ import intermediateData from "../Data/intermediate.json";
 import advancedData from "../Data/advanced.json";
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
+import {
+  auth,
+  onAuthChange,
+  getUserRememberedWords,
+  addUserRememberedWord,
+  removeUserRememberedWord,
+  setUserRememberedWords,
+} from "../firebase.js";
 
 const Vocabulary = () => {
   const [level, setLevel] = useState("beginner");
   const [remembered, setRemembered] = useState([]);
+  const [user, setUser] = useState(null);
 
-  // Load remembered words from localStorage
+  // Load remembered words from Firestore for authenticated users only
   useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("rememberedWords")) || [];
-    setRemembered(saved);
+    const unsub = onAuthChange(async (u) => {
+      setUser(u || null);
+      if (u) {
+        try {
+          const remote = await getUserRememberedWords(u.uid);
+          setRemembered(remote || []);
+        } catch (err) {
+          console.error("Failed to load remembered words from Firestore:", err);
+          setRemembered([]);
+        }
+      } else {
+        // Not signed in -> no remembered words (we no longer use localStorage)
+        setRemembered([]);
+      }
+    });
+    return () => unsub && unsub();
   }, []);
 
   // Save updates to localStorage
-  const toggleRemember = (word) => {
+  const toggleRemember = async (word) => {
+    const key = word["Present forms"];
+    const isRemembered = remembered.includes(key);
+
+    // Require authenticated user to persist remembered words to Firestore
+    const user = auth.currentUser;
+    if (!user) {
+      // Not signed in: redirect to Sign In
+      window.dispatchEvent(new CustomEvent("navigate-to-signin"));
+      return;
+    }
+
     let updated;
-    if (remembered.includes(word["Present forms"])) {
-      updated = remembered.filter((w) => w !== word["Present forms"]);
+    if (isRemembered) {
+      updated = remembered.filter((w) => w !== key);
     } else {
-      updated = [...remembered, word["Present forms"]];
+      updated = [...remembered, key];
     }
     setRemembered(updated);
-    localStorage.setItem("rememberedWords", JSON.stringify(updated));
+
+    try {
+      if (isRemembered) {
+        await removeUserRememberedWord(user.uid, key);
+      } else {
+        await addUserRememberedWord(user.uid, key);
+      }
+    } catch (err) {
+      console.error("Failed to persist remembered word:", err);
+      // revert local state on failure
+      setRemembered((prev) => (isRemembered ? [...prev, key] : prev.filter((w) => w !== key)));
+    }
   };
 
   // Words by selected level from separate files
@@ -41,6 +86,17 @@ const Vocabulary = () => {
     remembered.includes(w["Present forms"])
   ).length;
   const progress = total ? Math.round((learned / total) * 100) : 0;
+
+  // whether the visitor skipped auth (skipped users cannot use remember feature)
+  const isSkipped = (() => {
+    try {
+      return localStorage.getItem("skipAuth") === "true";
+    } catch (e) {
+      return false;
+    }
+  })();
+
+  const isDisabled = isSkipped || !user;
 
   return (
     <div className="bg-[#fffaf3] min-h-screen text-gray-900">
@@ -137,14 +193,23 @@ const Vocabulary = () => {
                   <td className="p-3">{word["Past Participles"]}</td>
                   <td className="p-3">
                     <button
-                      onClick={() => toggleRemember(word)}
+                      onClick={() => {
+                        if (isDisabled) {
+                          window.dispatchEvent(new CustomEvent("navigate-to-signin"));
+                          return;
+                        }
+                        toggleRemember(word);
+                      }}
+                      disabled={isDisabled}
                       className={`px-3 py-1 rounded-full text-sm font-medium ${
                         isRemembered
                           ? "bg-green-500 text-white"
+                          : isDisabled
+                          ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                           : "bg-gray-200 text-gray-700 hover:bg-yellow-300"
                       }`}
                     >
-                      {isRemembered ? "✅ Remembered" : "Mark"}
+                      {isRemembered ? "✅ Remembered" : isDisabled ? "Sign in to remember" : "Mark"}
                     </button>
                   </td>
                 </tr>
