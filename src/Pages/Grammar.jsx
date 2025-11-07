@@ -3198,84 +3198,103 @@ export default function Grammar() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Header */}
-      <section className="px-10 py-10 text-center">
-        <h2 className="text-4xl font-bold mb-3 text-[#1e293b]">
-          Grammar Lessons 📘
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Learn English Grammar with Sinhala explanations, examples, and
-          real-life usage patterns. 🇱🇰
-        </p>
-      </section>
+      {/* Hero */}
+      <header className="max-w-7xl mx-auto px-6 sm:px-10 py-8">
+        <div className="bg-gradient-to-r from-[#fff7ed] via-[#fff4e6] to-[#fffaf3] rounded-2xl p-6 md:p-10 shadow-md grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-[#1e293b]">
+              Master English Grammar
+            </h1>
+            <p className="mt-3 text-gray-600 max-w-xl">
+              Clear, bite-sized explanations with Sinhala translations, examples and quick practice — organised by topic so you can learn at your own pace.
+            </p>
 
-      {/* Topic Buttons */}
-      <div className="flex flex-wrap justify-center gap-4 px-6">
-        {topics.map((topic) => {
-          // Define difficulty levels
-          const beginnerTopics = [
-            "Parts of Speech",
-            "Tenses",
-            "Articles",
-            "Prepositions",
-            "Sentence Structure",
-            "Question Formation",
-          ];
-          const intermediateTopics = [
-            "Active Voice",
-            "Passive Voice",
-            "Reported Speech",
-            "Conditionals",
-            "Modals, Gerunds & more",
-            "Conjunctions & Linking Words",
-            "Comparatives & Superlatives",
-          ];
-          const advancedTopics = [
-            "Clauses",
-            "Phrasal Verbs & Idioms",
-            "Punctuation & Capitalization",
-            "Common Grammar Mistakes",
-          ];
+            <div className="mt-5 flex flex-col sm:flex-row gap-3">
+              <button
+                onClick={() => setActiveTopic("Tenses")}
+                className="px-5 py-3 bg-[#ff8c1a] text-white rounded-lg font-semibold shadow hover:bg-[#ff7a00] transition"
+              >
+                Explore Tenses
+              </button>
+              <button
+                onClick={() => setActiveTopic("Parts of Speech")}
+                className="px-5 py-3 bg-white border border-[#ffd9b3] text-[#b85a00] rounded-lg font-semibold shadow-sm hover:bg-[#fff7f0] transition"
+              >
+                Parts of Speech
+              </button>
+            </div>
+          </div>
 
-          // Determine level for current topic
-          let level = "beginner";
-          if (intermediateTopics.includes(topic)) level = "intermediate";
-          if (advancedTopics.includes(topic)) level = "advanced";
+          <div className="hidden md:flex justify-end">
+            <div className="w-64 h-44 bg-white rounded-xl shadow-inner flex items-center justify-center border border-gray-100">
+              <div className="text-center px-4">
+                <div className="text-4xl">📘</div>
+                <p className="text-sm text-gray-600 mt-2">Grammar explained simply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-          // Color mapping: beginner=light orange, intermediate=orange, advanced=dark red
-          const getButtonColors = () => {
-            if (activeTopic === topic) {
-              // Selected state - bold colors
-              if (level === "beginner")
-                return "bg-[#ffb366] text-white shadow-md hover:bg-[#FF8A08]";
-              if (level === "intermediate")
-                return "bg-[#ff8c1a] text-white shadow-md hover:bg-[#FF6500]";
-              if (level === "advanced")
-                return "bg-[#cc3300] text-white shadow-md hover:bg-[#C40C0C]";
-            }
-            // Unselected state - light borders with white background
-            if (level === "beginner")
-              return "bg-white text-[#ffb366] border-2 border-[#ffb366] hover:bg-[#fff5eb]";
-            if (level === "intermediate")
-              return "bg-white text-[#ff8c1a] border-2 border-[#ff8c1a] hover:bg-[#fff0e6]";
-            if (level === "advanced")
-              return "bg-white text-[#cc3300] border-2 border-[#cc3300] hover:bg-[#ffe6e6]";
-          };
+      {/* Main layout: sidebar (topics) + content */}
+      <main className="max-w-7xl mx-auto px-6 sm:px-10 pb-20 grid grid-cols-1 md:grid-cols-12 gap-8">
+        {/* Sidebar - shows as horizontal chips on mobile, sticky vertical on desktop */}
+        <aside className="md:col-span-3">
+          <div className="md:sticky md:top-20">
+            <div className="bg-white p-4 rounded-2xl shadow-sm border">
+              <h3 className="text-lg font-bold text-[#d4a017]">Topics</h3>
+              <p className="text-sm text-gray-600 mt-1">Quickly jump to any grammar area</p>
 
-          return (
-            <button
-              key={topic}
-              onClick={() => setActiveTopic(topic)}
-              className={`px-5 py-2 rounded-full font-semibold transition ${getButtonColors()}`}
-            >
-              {topic}
-            </button>
-          );
-        })}
-      </div>
+              {/* chips - mobile scroll */}
+              <div className="mt-4 flex gap-2 overflow-x-auto md:flex-col md:overflow-visible">
+                {topics.map((topic) => (
+                  <button
+                    key={topic}
+                    onClick={() => setActiveTopic(topic)}
+                    className={`flex-shrink-0 md:flex-shrink md:w-full px-4 py-2 text-sm font-medium rounded-lg transition ${
+                      activeTopic === topic
+                        ? "bg-[#ff8c1a] text-white shadow"
+                        : "bg-[#fffaf3] text-[#b85a00] border border-[#ffe6cc] hover:bg-[#fff3e6]"
+                    }`}
+                  >
+                    {topic}
+                  </button>
+                ))}
+              </div>
 
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-10 pb-16">{renderContent()}</div>
+              <div className="mt-4">
+                <input
+                  placeholder="Search topics..."
+                  className="w-full bg-[#fffaf3] px-3 py-2 rounded-md text-sm border border-transparent focus:border-[#ffd9b3]"
+                  onChange={(e) => {
+                    const q = e.target.value.toLowerCase();
+                    const found = topics.find((t) => t.toLowerCase().includes(q));
+                    if (found) setActiveTopic(found);
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="mt-4 hidden md:block">
+              <div className="bg-[#fffaf3] p-4 rounded-xl shadow-md">
+                <h4 className="font-semibold text-[#b8860b]">Need help?</h4>
+                <p className="text-sm text-gray-700 mt-2">Use the topics list to explore grammar sections. Tap a card to see examples and explanations.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        {/* Content area */}
+        <section className="md:col-span-9">
+          {/* show selected topic header */}
+          <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-extrabold text-[#1e293b]">{activeTopic}</h2>
+            <div className="text-sm text-gray-600">Click any card to view details</div>
+          </div>
+
+          <div className="mt-6">{renderContent()}</div>
+        </section>
+      </main>
 
       {/* Popup */}
       {renderPopup()}

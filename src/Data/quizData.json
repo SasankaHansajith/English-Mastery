@@ -1,0 +1,661 @@
+{
+  "beginner": [
+    {
+      "question": "What is the past tense of 'go'?",
+      "options": ["goed", "went", "gone", "going"],
+      "answer": "went"
+    },
+    {
+      "question": "Choose the correct article: ___ apple a day keeps the doctor away.",
+      "options": ["A", "An", "The", "No article"],
+      "answer": "An"
+    },
+    {
+      "question": "What is the plural of 'child'?",
+      "options": ["Childs", "Children", "Childes", "Childer"],
+      "answer": "Children"
+    },
+    {
+      "question": "Choose the correct article: I saw ___ elephant.",
+      "options": ["a", "an", "the", "no article"],
+      "answer": "an"
+    },
+    {
+      "question": "Pick the correct preposition: The cat is ___ the table.",
+      "options": ["on", "in", "at", "from"],
+      "answer": "on"
+    },
+    {
+      "question": "What is the past tense of 'eat'?",
+      "options": ["ate", "eaten", "eating", "eats"],
+      "answer": "ate"
+    },
+    {
+      "question": "Identify the verb: She runs fast.",
+      "options": ["She", "runs", "fast", "none"],
+      "answer": "runs"
+    },
+    {
+      "question": "Which one is a noun?",
+      "options": ["Run", "Beautiful", "Apple", "Quickly"],
+      "answer": "Apple"
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "He going to school.",
+        "He go to school.",
+        "He goes to school.",
+        "He gone to school."
+      ],
+      "answer": "He goes to school."
+    },
+    {
+      "question": "Fill in: I ___ happy today.",
+      "options": ["am", "is", "are", "be"],
+      "answer": "am"
+    },
+    {
+      "question": "Choose the correct tense: She ___ to the market yesterday.",
+      "options": ["go", "goes", "went", "gone"],
+      "answer": "went"
+    },
+    {
+      "question": "Pick the adjective: The flower is beautiful.",
+      "options": ["flower", "beautiful", "is", "the"],
+      "answer": "beautiful"
+    },
+    {
+      "question": "What is the plural of 'man'?",
+      "options": ["mans", "men", "manses", "menses"],
+      "answer": "men"
+    },
+    {
+      "question": "Choose the correct pronoun: ___ is my friend.",
+      "options": ["He", "She", "It", "Them"],
+      "answer": "He"
+    },
+    {
+      "question": "Fill in: There ___ many books on the table.",
+      "options": ["is", "are", "was", "be"],
+      "answer": "are"
+    },
+    {
+      "question": "Pick the opposite of 'Hot'.",
+      "options": ["Warm", "Cool", "Cold", "Boiling"],
+      "answer": "Cold"
+    },
+    {
+      "question": "Select the correct form: They ___ playing football.",
+      "options": ["is", "am", "are", "be"],
+      "answer": "are"
+    },
+    {
+      "question": "Choose the correct article: ___ sun rises in the east.",
+      "options": ["A", "An", "The", "No article"],
+      "answer": "The"
+    },
+    {
+      "question": "Identify the adverb: He runs quickly.",
+      "options": ["He", "runs", "quickly", "none"],
+      "answer": "quickly"
+    },
+    {
+      "question": "Choose the correct preposition: We are going ___ school.",
+      "options": ["to", "on", "at", "in"],
+      "answer": "to"
+    },
+    {
+      "question": "Pick the correct sentence:",
+      "options": [
+        "She have a pen.",
+        "She has a pen.",
+        "She haves a pen.",
+        "She hads a pen."
+      ],
+      "answer": "She has a pen."
+    },
+    {
+      "question": "What is the past tense of 'go'?",
+      "options": ["goes", "gone", "went", "going"],
+      "answer": "went"
+    },
+    {
+      "question": "Fill in the blank: I ___ a student.",
+      "options": ["am", "is", "are", "be"],
+      "answer": "am"
+    },
+    {
+      "question": "Choose the correct question: ___ you like apples?",
+      "options": ["Do", "Does", "Did", "Is"],
+      "answer": "Do"
+    },
+    {
+      "question": "Which is the correct spelling?",
+      "options": ["Realy", "Rely", "Really", "Realee"],
+      "answer": "Really"
+    },
+    {
+      "question": "Choose the opposite word: Tall → ___",
+      "options": ["Thin", "Short", "Big", "Small"],
+      "answer": "Short"
+    },
+    {
+      "question": "Select the correct verb form: She ___ English every day.",
+      "options": ["study", "studies", "studied", "studying"],
+      "answer": "studies"
+    },
+    {
+      "question": "Pick the correct word: A group of students ___ playing.",
+      "options": ["is", "are", "was", "be"],
+      "answer": "are"
+    },
+    {
+      "question": "Identify the correct sentence:",
+      "options": [
+        "He don't like tea.",
+        "He doesn’t like tea.",
+        "He didn’t likes tea.",
+        "He not like tea."
+      ],
+      "answer": "He doesn’t like tea."
+    },
+    {
+      "question": "What is the plural of 'mouse'?",
+      "options": ["mouses", "mices", "mice", "mouse"],
+      "answer": "mice"
+    },
+    {
+      "question": "Choose the correct word: This is ___ book.",
+      "options": ["me", "my", "mine", "I"],
+      "answer": "my"
+    },
+    {
+      "question": "Pick the correct preposition: The book is ___ the bag.",
+      "options": ["in", "on", "at", "over"],
+      "answer": "in"
+    }
+ 
+
+
+  ],
+  "intermediate": [
+      {
+      "question": "Which sentence is in the passive voice?",
+      "options": [
+        "The chef cooked the meal.",
+        "The meal was cooked by the chef.",
+        "The chef is cooking the meal.",
+        "The meal cooks itself."
+      ],
+      "answer": "The meal was cooked by the chef."
+    },
+    {
+      "question": "Choose the correct conditional: If I ___ rich, I would travel the world.",
+      "options": ["am", "was", "were", "be"],
+      "answer": "were"
+    },
+    {
+      "question": "Which modal verb fits? You ___ study harder to pass the exam.",
+      "options": ["can", "must", "might", "may"],
+      "answer": "must"
+    },
+    {
+      "question": "Identify the reported speech: She said, 'I am tired.'",
+      "options": [
+        "She said that she is tired.",
+        "She said that she was tired.",
+        "She said that I was tired.",
+        "She says she was tired."
+      ],
+      "answer": "She said that she was tired."
+    },
+    {
+      "question": "Choose the correct phrase: He has lived here ___ 2010.",
+      "options": ["since", "for", "from", "in"],
+      "answer": "since"
+    },
+    {
+      "question": "Select the correct sentence:",
+      "options": [
+        "I have visited Paris last year.",
+        "I visited Paris last year.",
+        "I have visit Paris last year.",
+        "I visiting Paris last year."
+      ],
+      "answer": "I visited Paris last year."
+    },
+    {
+      "question": "Pick the correct preposition: She is interested ___ music.",
+      "options": ["on", "at", "in", "about"],
+      "answer": "in"
+    },
+    {
+      "question": "Choose the correct form: He has been working here ___ five years.",
+      "options": ["since", "for", "in", "from"],
+      "answer": "for"
+    },
+    {
+      "question": "Identify the correct use of 'used to':",
+      "options": [
+        "I use to play football.",
+        "I used to play football.",
+        "I used play football.",
+        "I am used play football."
+      ],
+      "answer": "I used to play football."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "She didn’t went to school.",
+        "She not go to school.",
+        "She didn’t go to school.",
+        "She doesn’t went to school."
+      ],
+      "answer": "She didn’t go to school."
+    },
+    {
+      "question": "What is the past participle of 'write'?",
+      "options": ["wrote", "written", "writing", "writes"],
+      "answer": "written"
+    },
+    {
+      "question": "Select the correct question tag: You are tired, ___?",
+      "options": ["aren’t you", "are you", "don’t you", "did you"],
+      "answer": "aren’t you"
+    },
+    {
+      "question": "Pick the correct comparative: This book is ___ than that one.",
+      "options": ["good", "better", "best", "more better"],
+      "answer": "better"
+    },
+    {
+      "question": "Choose the correct modal: It ___ rain later, take an umbrella.",
+      "options": ["may", "must", "shall", "can"],
+      "answer": "may"
+    },
+    {
+      "question": "Find the correct phrase: He is looking forward ___ you.",
+      "options": ["to meet", "to meeting", "meeting", "meet"],
+      "answer": "to meeting"
+    },
+    {
+      "question": "Choose the correct tense: They ___ dinner when I arrived.",
+      "options": ["had", "were having", "have had", "have"],
+      "answer": "were having"
+    },
+    {
+      "question": "Identify the indirect question: Where does he live?",
+      "options": [
+        "Do you know where he lives?",
+        "Do you know where does he live?",
+        "Where he lives do you know?",
+        "Where does he lives?"
+      ],
+      "answer": "Do you know where he lives?"
+    },
+    {
+      "question": "Pick the correct use of a relative clause:",
+      "options": [
+        "The man which lives next door is a doctor.",
+        "The man who lives next door is a doctor.",
+        "The man where lives next door is a doctor.",
+        "The man lives next door is a doctor."
+      ],
+      "answer": "The man who lives next door is a doctor."
+    },
+    {
+      "question": "Choose the correct phrase: By the time I arrived, he ___.",
+      "options": ["left", "had left", "has left", "was leaving"],
+      "answer": "had left"
+    },
+    {
+      "question": "Choose the correct form: He said he ___ finish it tomorrow.",
+      "options": ["will", "would", "can", "shall"],
+      "answer": "would"
+    },
+    {
+      "question": "Pick the correct sentence:",
+      "options": [
+        "I am agree with you.",
+        "I agree with you.",
+        "I am agreed with you.",
+        "I agrees with you."
+      ],
+      "answer": "I agree with you."
+    },
+    {
+      "question": "Which sentence uses a gerund correctly?",
+      "options": [
+        "He enjoys to swim.",
+        "He enjoys swimming.",
+        "He enjoy swimming.",
+        "He enjoys swim."
+      ],
+      "answer": "He enjoys swimming."
+    },
+    {
+      "question": "Choose the correct phrasal verb: He gave ___ smoking last year.",
+      "options": ["out", "off", "up", "in"],
+      "answer": "up"
+    },
+    {
+      "question": "Find the correct conjunction: I stayed home ___ it was raining.",
+      "options": ["but", "and", "because", "so"],
+      "answer": "because"
+    },
+    {
+      "question": "Choose the correct comparative form: This car is ___ than that one.",
+      "options": ["fast", "faster", "fastest", "more fast"],
+      "answer": "faster"
+    },
+    {
+      "question": "Select the correct question: How long ___ you lived here?",
+      "options": ["have", "has", "did", "do"],
+      "answer": "have"
+    },
+    {
+      "question": "Identify the correct structure: He had already ___ when we arrived.",
+      "options": ["leaves", "leaving", "left", "leave"],
+      "answer": "left"
+    },
+    {
+      "question": "Choose the correct form of adjective: She is the ___ student in the class.",
+      "options": ["good", "better", "best", "most better"],
+      "answer": "best"
+    },
+    {
+      "question": "Pick the correct conditional: If it rains, we ___ stay at home.",
+      "options": ["will", "would", "shall", "must"],
+      "answer": "will"
+    },
+    {
+      "question": "Choose the correct word: I prefer tea ___ coffee.",
+      "options": ["to", "than", "over", "from"],
+      "answer": "to"
+    }
+  ],
+  "advanced": [
+     {
+      "question": "Which sentence uses a noun clause?",
+      "options": [
+        "I know that she is honest.",
+        "She runs every morning.",
+        "They are happy together.",
+        "He bought a new car."
+      ],
+      "answer": "I know that she is honest."
+    },
+    {
+      "question": "Choose the correctly punctuated sentence.",
+      "options": [
+        "However I like coffee more.",
+        "However, I like coffee more.",
+        "However I, like coffee more.",
+        "However I like, coffee more."
+      ],
+      "answer": "However, I like coffee more."
+    },
+    {
+      "question": "Select the correct use of an adjective clause.",
+      "options": [
+        "The man who lives next door is an engineer.",
+        "The man which lives next door is an engineer.",
+        "The man living next door who is engineer.",
+        "The man he lives next door is engineer."
+      ],
+      "answer": "The man who lives next door is an engineer."
+    },
+    {
+      "question": "Which is the correct indirect speech: He said, 'I will call you tomorrow.'",
+      "options": [
+        "He said he would call me tomorrow.",
+        "He said he will call me the next day.",
+        "He said he would call me the next day.",
+        "He said he will call me next day."
+      ],
+      "answer": "He said he would call me the next day."
+    },
+    {
+      "question": "Identify the correct idiom meaning 'to start something new'.",
+      "options": [
+        "Break the ice",
+        "Hit the sack",
+        "Bite the bullet",
+        "Under the weather"
+      ],
+      "answer": "Break the ice."
+    },
+    {
+      "question": "Choose the correct conditional: If she ___ earlier, she wouldn’t have missed the bus.",
+      "options": ["left", "had left", "has left", "leaves"],
+      "answer": "had left"
+    },
+    {
+      "question": "Select the sentence with correct parallel structure.",
+      "options": [
+        "She likes reading, to swim, and jogging.",
+        "She likes to read, swimming, and jogging.",
+        "She likes reading, swimming, and jogging.",
+        "She likes to read, swimming, and to jog."
+      ],
+      "answer": "She likes reading, swimming, and jogging."
+    },
+    {
+      "question": "Choose the correctly punctuated sentence.",
+      "options": [
+        "Let's eat grandma!",
+        "Let's eat, grandma!",
+        "Lets eat, grandma!",
+        "Lets eat grandma"
+      ],
+      "answer": "Let's eat, grandma!"
+    },
+    {
+      "question": "Pick the correct sentence with a participle phrase.",
+      "options": [
+        "Walking down the street, I saw an old friend.",
+        "I walking down the street saw an old friend.",
+        "Walk down the street, I saw an old friend.",
+        "I walk down street seeing old friend."
+      ],
+      "answer": "Walking down the street, I saw an old friend."
+    },
+    {
+      "question": "Choose the correct advanced modal: You ___ have told me earlier!",
+      "options": ["must", "should", "would", "might"],
+      "answer": "should"
+    },
+    {
+      "question": "Select the sentence with a correct relative clause.",
+      "options": [
+        "The house whose roof was damaged belongs to my uncle.",
+        "The house who roof was damaged belongs to my uncle.",
+        "The house which roof damaged belongs to my uncle.",
+        "The house that its roof was damaged belongs to my uncle."
+      ],
+      "answer": "The house whose roof was damaged belongs to my uncle."
+    },
+    {
+      "question": "Identify the correct punctuation use.",
+      "options": [
+        "She bought apples oranges and bananas.",
+        "She bought apples, oranges and bananas.",
+        "She bought apples, oranges, and bananas.",
+        "She bought, apples oranges, and bananas."
+      ],
+      "answer": "She bought apples, oranges, and bananas."
+    },
+    {
+      "question": "Find the correct sentence with an adverbial clause.",
+      "options": [
+        "He arrived when I was leaving.",
+        "He arrived I was leaving.",
+        "He when arrived I was leaving.",
+        "He arrived that I was leaving."
+      ],
+      "answer": "He arrived when I was leaving."
+    },
+    {
+      "question": "Choose the correct idiom: 'The test was a piece of cake' means —",
+      "options": [
+        "The test was very difficult.",
+        "The test was very easy.",
+        "The test was confusing.",
+        "The test was strange."
+      ],
+      "answer": "The test was very easy."
+    },
+    {
+      "question": "Which sentence uses correct punctuation with quotation marks?",
+      "options": [
+        "She said, “I’m tired”.",
+        "She said, “I’m tired.”",
+        "She said “I’m tired.”",
+        "She said, I’m tired."
+      ],
+      "answer": "She said, “I’m tired.”"
+    },
+    {
+      "question": "Select the correct use of a dash (—).",
+      "options": [
+        "I need three things—bread, milk, and eggs.",
+        "I need three things, bread—milk—and eggs.",
+        "I need—three things, bread, milk, and eggs.",
+        "I need three things, bread, milk—and eggs."
+      ],
+      "answer": "I need three things—bread, milk, and eggs."
+    },
+    {
+      "question": "Choose the correct sentence using inversion.",
+      "options": [
+        "Never have I seen such beauty.",
+        "I have never seen such beauty.",
+        "Never I have seen such beauty.",
+        "Never seen I have such beauty."
+      ],
+      "answer": "Never have I seen such beauty."
+    },
+    {
+      "question": "Pick the correct reported speech: He said, 'I can swim.'",
+      "options": [
+        "He said that he could swim.",
+        "He said that he can swim.",
+        "He said he can swimming.",
+        "He said that he could swimming."
+      ],
+      "answer": "He said that he could swim."
+    },
+    {
+      "question": "Which is the correct use of a semi-colon?",
+      "options": [
+        "I went to the park; it was closed.",
+        "I went to the park, it was closed.",
+        "I went; to the park, it was closed.",
+        "I went, to the park; it was closed."
+      ],
+      "answer": "I went to the park; it was closed."
+    },
+    {
+      "question": "Identify the correct advanced conditional.",
+      "options": [
+        "Had I known, I would have helped you.",
+        "If I know, I would help you.",
+        "Had I knew, I would help you.",
+        "If I have known, I would help you."
+      ],
+      "answer": "Had I known, I would have helped you."
+    },
+    {
+      "question": "Choose the correct idiom: 'Break a leg!' means —",
+      "options": [
+        "Good luck!",
+        "Be careful!",
+        "Stop doing that!",
+        "Get well soon!"
+      ],
+      "answer": "Good luck!"
+    },
+    {
+      "question": "Select the correct punctuation: She loves three things: dancing, music, and travel.",
+      "options": [
+        "She loves three things; dancing, music, and travel.",
+        "She loves three things, dancing, music, and travel.",
+        "She loves three things: dancing, music, and travel.",
+        "She loves three things- dancing, music, and travel."
+      ],
+      "answer": "She loves three things: dancing, music, and travel."
+    },
+    {
+      "question": "Find the correct complex sentence.",
+      "options": [
+        "Because it was raining, we stayed indoors.",
+        "It was raining, we stayed indoors.",
+        "It was raining and we stayed indoors.",
+        "It was raining so we stay indoors."
+      ],
+      "answer": "Because it was raining, we stayed indoors."
+    },
+    {
+      "question": "Choose the correct use of 'whose'.",
+      "options": [
+        "This is the girl whose book was lost.",
+        "This is the girl who's book was lost.",
+        "This is the girl which book was lost.",
+        "This is the girl her book was lost."
+      ],
+      "answer": "This is the girl whose book was lost."
+    },
+    {
+      "question": "Pick the correct idiom: 'Spill the beans' means —",
+      "options": [
+        "Tell a secret.",
+        "Make a mess.",
+        "Cook something.",
+        "Forget something."
+      ],
+      "answer": "Tell a secret."
+    },
+    {
+      "question": "Choose the correct form: No sooner ___ he arrived than it started raining.",
+      "options": ["did", "had", "was", "has"],
+      "answer": "had"
+    },
+    {
+      "question": "Select the correct punctuation for direct address.",
+      "options": [
+        "John please close the door.",
+        "John, please close the door.",
+        "John please, close the door.",
+        "John please close, the door."
+      ],
+      "answer": "John, please close the door."
+    },
+    {
+      "question": "Find the correct ellipsis usage.",
+      "options": [
+        "I was thinking... maybe we should go.",
+        "I was thinking, maybe we should go...",
+        "I was thinking...maybe, we should go.",
+        "I was...thinking maybe we should go."
+      ],
+      "answer": "I was thinking... maybe we should go."
+    },
+    {
+      "question": "Pick the correct sentence: Each of the students ___ given a book.",
+      "options": ["was", "were", "are", "have"],
+      "answer": "was"
+    },
+    {
+      "question": "Choose the correct advanced idiom: 'Hit the nail on the head' means —",
+      "options": [
+        "To describe something exactly right.",
+        "To make a big mistake.",
+        "To break something.",
+        "To fight with someone."
+      ],
+      "answer": "To describe something exactly right."
+    }
+  ]
+}

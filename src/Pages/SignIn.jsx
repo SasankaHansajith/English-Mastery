@@ -37,13 +37,14 @@ const SignIn = () => {
 
   return (
     <div className="bg-[#fdfaf5] min-h-screen flex flex-col text-gray-900 font-sans">
-      <section className="flex-grow flex items-center justify-center px-6 py-16 bg-[#fffaf3] relative overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="bg-white shadow-xl rounded-3xl p-10 w-full max-w-md z-10"
-        >
+      <section className="flex-grow flex items-center justify-center px-6 py-12 bg-[#fffaf3] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto w-full px-6 sm:px-10">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="bg-white shadow-xl rounded-3xl p-8 sm:p-10 w-full max-w-md mx-auto z-10"
+          >
           <h2 className="text-3xl font-bold text-center mb-6 text-[#d4a017]">
             Welcome Back 👋
           </h2>
@@ -154,6 +155,7 @@ const SignIn = () => {
         </motion.div>
 
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#fff3e0] to-transparent opacity-40 rounded-3xl"></div>
+        </div>
       </section>
 
       <Footer />

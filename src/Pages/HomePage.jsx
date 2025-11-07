@@ -17,205 +17,165 @@ const HomePage = () => {
   const levels = [
     {
       id: "beginner",
-      color: "bg-[#ffe6cc]",
+      color: "from-[#fff3e6] to-[#ffe6cc]",
       title: "Beginner",
-      desc: "Start your journey with basic grammar and sentence building.",
+      desc: "Start your journey with clear basics and simple examples.",
       topics: ["Parts of Speech", "Sentence Basics", "Tenses", "Articles"],
+      icon: <BookOpen className="w-8 h-8 text-[#d4a017]" />,
     },
     {
       id: "intermediate",
-      color: "bg-[#ffd6b3]",
+      color: "from-[#fff1e0] to-[#ffd6b3]",
       title: "Intermediate",
-      desc: "Learn more complex grammar and how to connect ideas naturally.",
+      desc: "Connect ideas and use more natural English.",
       topics: ["Conditionals", "Modals", "Passive Voice", "Reported Speech"],
+      icon: <Brain className="w-8 h-8 text-[#d4a017]" />,
     },
     {
       id: "advanced",
-      color: "bg-[#ffcccc]",
+      color: "from-[#fff0f0] to-[#ffcccc]",
       title: "Advanced",
-      desc: "Master advanced grammar, punctuation, and idiomatic expressions.",
+      desc: "Master nuance, idioms and fluent expression.",
       topics: ["Clauses", "Punctuation", "Idioms", "Advanced Vocabulary"],
+      icon: <Award className="w-8 h-8 text-[#d4a017]" />,
     },
   ];
 
   return (
-    <div className="bg-[#fdfaf5] text-gray-900 font-sans overflow-x-hidden">
+    <div className="bg-gradient-to-b from-[#fdfaf5] to-[#fffaf3] text-gray-900 font-sans overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative flex flex-col md:flex-row items-center justify-between px-10 py-16 md:py-24 overflow-hidden bg-[#fffaf3]">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-xl z-10"
-        >
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-snug mb-5">
-            Learn English <span className="text-[#d4a017]">Easily</span> <br />
-            From Sinhala Step by Step 🇱🇰
-          </h2>
-          <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-            Master grammar, vocabulary, speaking, and writing with clear Sinhala
-            explanations and examples. <br />
-            සිංහලෙන් ඉංග්‍රීසි ඉගෙන ගන්න — ඉතා පහසුවෙන්, අදම ආරම්භ කරන්න!
-          </p>
-          <Button
-            className="bg-[#d4a017] text-white px-6 py-3 rounded-full text-lg hover:bg-[#b88d10] transition shadow-lg hover:shadow-xl"
-            onClick={() =>
-              document
-                .getElementById("roadmap")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
+      <section className="relative py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-6 md:flex md:items-center md:gap-8">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="md:w-1/2"
           >
-            Start Learning Now 🚀
-          </Button>
-        </motion.div>
+            <div className="inline-flex items-center gap-3 mb-4">
+              <span className="px-3 py-1 rounded-full bg-[#d4a017] text-white font-semibold">New</span>
+              <span className="text-sm text-gray-600">Updated lessons & quizzes</span>
+            </div>
 
-        <motion.img
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          src={heroLearningImg}
-          alt="Learning English"
-          className="w-[380px] md:w-[480px] mt-10 md:mt-0 drop-shadow-xl"
-        />
+            <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+              Learn English <span className="text-[#d4a017]">Easily</span>
+              <br /> From Sinhala — Step by Step
+            </h1>
 
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#fff3e0] to-transparent opacity-40 rounded-3xl"></div>
-      </section>
+            <p className="text-gray-700 mb-6 max-w-xl">
+              Clear Sinhala explanations, bite-sized lessons, and interactive
+              quizzes to build confidence. Practice daily and track progress.
+            </p>
 
-      {/* Roadmap Section */}
-      <section id="roadmap" className="py-20 px-10 relative bg-[#fffaf3]">
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl font-semibold mb-6 text-center text-[#d4a017]"
-        >
-          📘 Learn by Level
-        </motion.h3>
-        <p className="text-center text-gray-600 mb-12">
-          Start from your level — Beginner, Intermediate, or Advanced — and grow
-          step by step!
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {levels.map((level, index) => (
-            <motion.div
-              key={level.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.6 }}
-              className={`${level.color} p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2`}
-            >
-              <h2 className="text-2xl font-bold mb-3 text-gray-800">
-                {level.title}
-              </h2>
-              <p className="text-gray-700 mb-3">{level.desc}</p>
-              <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
-                {level.topics.map((topic, i) => (
-                  <li key={i}>{topic}</li>
-                ))}
-              </ul>
-              <button
-                onClick={() =>
-                  window.dispatchEvent(new CustomEvent("navigate-to-grammar"))
-                }
-                className="w-full bg-[#d4a017] text-white py-2 rounded-full font-semibold hover:bg-[#c1910f] transition"
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button
+                className="bg-[#d4a017] text-white px-5 py-3 rounded-full hover:bg-[#b88d10] shadow-md"
+                onClick={() => document.getElementById("roadmap")?.scrollIntoView({ behavior: "smooth" })}
               >
-                Start {level.title} →
+                Start Learning 🚀
+              </Button>
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent("navigate-to-quiz"))}
+                className="px-5 py-3 rounded-full border border-gray-200 bg-white text-gray-800 hover:shadow-md"
+              >
+                Try a Quiz
               </button>
-            </motion.div>
-          ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+            className="md:w-1/2 mt-8 md:mt-0 flex justify-center"
+          >
+            <div className="relative">
+              <div className="w-[260px] sm:w-[340px] md:w-[360px] lg:w-[460px] bg-white rounded-3xl p-4 sm:p-6 shadow-2xl">
+                <img loading="lazy" src={heroLearningImg} alt="Learning" className="w-full rounded-xl" />
+              </div>
+              <div className="absolute -bottom-4 -right-6 bg-gradient-to-tr from-[#ffd6b3] to-[#ffe6cc] p-3 rounded-full shadow-lg">
+                <span className="text-sm font-semibold">Beginner → Advanced</span>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Categories Section */}
-      <section className="relative bg-[#262626] text-white py-20 px-10 rounded-t-[40px] overflow-hidden">
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-b from-[#333] to-[#262626] opacity-70"
-          animate={{
-            backgroundPosition: ["0% 0%", "100% 100%"],
-          }}
-          transition={{ repeat: Infinity, duration: 10 }}
-        ></motion.div>
+      {/* Roadmap / Levels */}
+      <section id="roadmap" className="py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-semibold text-center text-[#d4a017] mb-4">📘 Learn by Level</h2>
+          <p className="text-center text-gray-600 mb-8">Choose a level and follow the curated lessons and quizzes.</p>
 
-        <div className="relative z-10">
-          <h3 className="text-3xl font-semibold mb-10 text-center">
-            Main Learning Categories
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <CategoryCard
-              icon={<BookOpen className="w-10 h-10 text-[#d4a017]" />}
-              title="Grammar"
-              text="Learn all grammar rules with Sinhala explanations and examples."
-              onClick={() =>
-                window.dispatchEvent(new CustomEvent("navigate-to-grammar"))
-              }
-            />
-            <CategoryCard
-              icon={<Brain className="w-10 h-10 text-[#d4a017]" />}
-              title="Vocabulary"
-              text="Build your word power with Sinhala meanings and daily word lists."
-            />
-            <CategoryCard
-              icon={<Edit3 className="w-10 h-10 text-[#d4a017]" />}
-              title="Writing"
-              text="Practice essays, paragraphs, and letters step by step."
-            />
-            <CategoryCard
-              icon={<MessageSquare className="w-10 h-10 text-[#d4a017]" />}
-              title="Speaking"
-              text="Improve pronunciation and conversation skills with audio."
-            />
-            <CategoryCard
-              icon={<Award className="w-10 h-10 text-[#d4a017]" />}
-              title="Quizzes"
-              text="Test your knowledge and earn badges for your progress!"
-            />
-            <CategoryCard
-              icon={<Globe className="w-10 h-10 text-[#d4a017]" />}
-              title="Tools"
-              text="Dictionary, verb forms, and pronunciation guides."
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {levels.map((lvl, i) => (
+              <motion.div key={lvl.id} whileHover={{ y: -6 }} className="relative group">
+                <div className={`rounded-2xl p-4 md:p-6 shadow-lg bg-gradient-to-b ${lvl.color} border border-transparent transition transform`}> 
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-white/60 rounded-full p-3">{lvl.icon}</div>
+                      <div>
+                        <h3 className="text-xl font-bold">{lvl.title}</h3>
+                        <p className="text-sm text-gray-700">{lvl.desc}</p>
+                      </div>
+                    </div>
+                    <div className="text-sm text-gray-600">{i + 1}/3</div>
+                  </div>
+
+                  <ul className="text-gray-700 text-sm mb-4 space-y-1">
+                    {lvl.topics.map((t, idx) => (
+                      <li key={idx} className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-[#d4a017] rounded-full" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-4">
+                    <button
+                      onClick={() => window.dispatchEvent(new CustomEvent("navigate-to-grammar"))}
+                      className="w-full px-4 py-2 bg-white text-[#d4a017] rounded-full font-semibold hover:shadow"
+                    >
+                      Start {lvl.title}
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Daily Notebook Section */}
-      <section className="py-20 px-10 text-center bg-[#fffaf3] relative">
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="text-3xl font-bold mb-4"
-        >
-          Daily Notebook 🗓️
-        </motion.h3>
-        <p className="text-gray-600 mb-8">
-          Track your daily learning progress with our smart Calendar Notebook
-        </p>
-
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="max-w-md mx-auto bg-white rounded-3xl shadow-lg p-10 cursor-pointer hover:shadow-2xl transition-all"
-          onClick={() =>
-            window.dispatchEvent(new CustomEvent("navigate-to-calendar"))
-          }
-        >
-          <div className="text-6xl mb-4">📝</div>
-          <h4 className="text-2xl font-bold mb-2 text-[#d4a017]">
-            Calendar Notebook
-          </h4>
-          <p className="text-gray-600 mb-4">
-            Keep track of vocabulary learned, grammar lessons completed, and
-            daily notes easily.
-          </p>
-          <div className="flex justify-center gap-4 text-sm text-gray-500">
-            <span>📚 Vocabulary</span>
-            <span>✍️ Grammar</span>
-            <span>📅 Notes</span>
+      {/* Categories */}
+      <section className="py-16 bg-[#111827] text-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-3xl text-center font-semibold mb-8">Main Learning Categories</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <CategoryCard icon={<BookOpen />} title="Grammar" onClick={() => window.dispatchEvent(new CustomEvent('navigate-to-grammar'))} />
+            <CategoryCard icon={<Brain />} title="Vocabulary" onClick={() => window.dispatchEvent(new CustomEvent('navigate-to-vocabulary'))} />
+            <CategoryCard icon={<Edit3 />} title="Writing" onClick={() => window.dispatchEvent(new CustomEvent('navigate-to-writing'))} />
+            <CategoryCard icon={<MessageSquare />} title="Speaking" onClick={() => window.dispatchEvent(new CustomEvent('navigate-to-speaking'))} />
+            <CategoryCard icon={<Award />} title="Quizzes" onClick={() => window.dispatchEvent(new CustomEvent('navigate-to-quiz'))} />
+            <CategoryCard icon={<Globe />} title="Tools" onClick={() => window.dispatchEvent(new CustomEvent('navigate-to-tools'))} />
           </div>
-        </motion.div>
+        </div>
+      </section>
+
+      {/* Daily Notebook */}
+      <section className="py-16 px-6 bg-[#fffaf3]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-3xl font-bold mb-4">Daily Notebook 🗓️</h3>
+          <p className="text-gray-700 mb-8">Track your progress, save notes and review vocabulary — all in one place.</p>
+          <div className="flex justify-center">
+            <div onClick={() => window.dispatchEvent(new CustomEvent('navigate-to-calendar'))} className="cursor-pointer bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition">
+              <div className="text-6xl mb-4">📝</div>
+              <h4 className="text-2xl font-bold mb-2 text-[#d4a017]">Calendar Notebook</h4>
+              <p className="text-gray-600">Record your daily wins and revisits.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <Footer />
@@ -223,15 +183,17 @@ const HomePage = () => {
   );
 };
 
-const CategoryCard = ({ icon, title, text, onClick }) => (
-  <motion.div
-    whileHover={{ scale: 1.07 }}
-    className="bg-[#1a1a1a] rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition cursor-pointer border border-[#333]"
-    onClick={onClick}
-  >
-    <div className="flex justify-center mb-4">{icon}</div>
-    <h4 className="text-xl font-bold mb-2">{title}</h4>
-    <p className="text-gray-400 text-sm">{text}</p>
+const CategoryCard = ({ icon, title, onClick }) => (
+  <motion.div whileHover={{ y: -6 }} className="bg-white/6 backdrop-blur-md rounded-2xl p-4 sm:p-6 shadow-inner border border-white/10 cursor-pointer" onClick={onClick}>
+    <div className="flex items-center gap-4">
+      <div className="p-3 rounded-lg bg-white/10">
+        {React.cloneElement(icon, { className: "w-7 h-7 text-[#d4a017]" })}
+      </div>
+      <div>
+        <h4 className="text-lg font-semibold">{title}</h4>
+        <p className="text-sm text-gray-300">Explore {title} lessons & practice</p>
+      </div>
+    </div>
   </motion.div>
 );
 

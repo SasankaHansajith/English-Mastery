@@ -36,6 +36,8 @@ const Navbar = () => {
     window.dispatchEvent(new CustomEvent("navigate-to-writing"));
   const goSpeaking = () =>
     window.dispatchEvent(new CustomEvent("navigate-to-speaking"));
+  const goQuiz = () =>
+    window.dispatchEvent(new CustomEvent("navigate-to-quiz"));
   const goSignIn = () =>
     window.dispatchEvent(new CustomEvent("navigate-to-signin"));
   const goSignUp = () =>
@@ -99,12 +101,18 @@ const Navbar = () => {
         >
           Speaking
         </button>
-        <a href="#quiz" className="hover:text-[#d4a017]">
+        <button
+          onClick={goQuiz}
+          className="hover:text-[#d4a017] cursor-pointer transition"
+        >
           Quizzes
-        </a>
-        <a href="#tools" className="hover:text-[#d4a017]">
+        </button>
+        <button
+          onClick={() => window.dispatchEvent(new CustomEvent("navigate-to-tools"))}
+          className="hover:text-[#d4a017] cursor-pointer transition"
+        >
           Tools
-        </a>
+        </button>
       </div>
       <div className="flex items-center gap-3">
         {!user && (

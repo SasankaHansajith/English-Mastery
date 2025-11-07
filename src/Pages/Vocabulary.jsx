@@ -102,18 +102,16 @@ const Vocabulary = () => {
     <div className="bg-[#fffaf3] min-h-screen text-gray-900">
       <Navbar />
 
-      {/* Header */}
-      <section className="text-center py-10">
-        <h1 className="text-3xl font-bold text-[#d4a017] mb-2">
-          ✨ Vocabulary
-        </h1>
-        <p className="text-gray-600">
-          Learn common verbs with Sinhala meanings and mark what you remember!
-        </p>
-      </section>
+      {/* Header / Hero */}
+      <header className="max-w-7xl mx-auto px-6 sm:px-10 py-8">
+        <div className="bg-gradient-to-r from-[#fff7ed] via-[#fff4e6] to-[#fffaf3] rounded-2xl p-6 md:p-8 shadow-sm text-center">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1e293b]">✨ Vocabulary</h1>
+          <p className="mt-2 text-gray-600 max-w-2xl mx-auto">Learn common verbs with Sinhala meanings and mark which ones you've remembered. Sign in to persist your progress across devices.</p>
+        </div>
+      </header>
 
       {/* Level Selector */}
-      <div className="flex justify-center gap-4 mb-6">
+      <div className="flex justify-center gap-4 mb-6 px-4 sm:px-0">
         {["beginner", "intermediate", "advanced"].map((lvl) => {
           // Color mapping: beginner=light orange, intermediate=orange, advanced=dark red
           const getButtonColors = (currentLvl) => {
@@ -150,8 +148,8 @@ const Vocabulary = () => {
         })}
       </div>
 
-      {/* Progress Bar */}
-      <div className="max-w-xl mx-auto text-center mb-8">
+  {/* Progress Bar */}
+  <div className="max-w-xl mx-auto text-center mb-8 px-4 sm:px-0">
         <div className="h-3 bg-gray-300 rounded-full overflow-hidden">
           <div
             className="h-3 bg-[#d4a017] transition-all"
@@ -163,8 +161,8 @@ const Vocabulary = () => {
         </p>
       </div>
 
-      {/* Table */}
-      <div className="overflow-x-auto max-w-5xl mx-auto bg-white shadow-md rounded-2xl mb-16">
+  {/* Table */}
+  <div className="overflow-x-auto max-w-5xl mx-auto bg-white shadow-md rounded-2xl mb-16 px-4 sm:px-0">
         <table className="w-full border-collapse">
           <thead className="bg-[#f0e6d2] text-gray-800">
             <tr>

@@ -5,11 +5,20 @@ import Vocabulary from "./Pages/Vocabulary.jsx";
 import CalendarNotebook from "./Pages/CalendarNotebook.jsx";
 import Writing from "./Pages/Writing.jsx";
 import Speaking from "./Pages/Speaking.jsx";
+import Quiz from "./Pages/Quiz.jsx";
+import Tools from "./Pages/Tools.jsx";
 // SignIn will be loaded dynamically to avoid bundling/import-time issues
 import { onAuthChange, signOutUser } from "./firebase.js";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("home");
+  // show signin on first load unless visitor explicitly skipped
+  const [currentPage, setCurrentPage] = useState(() => {
+    try {
+      return localStorage.getItem("skipAuth") === "true" ? "home" : "signin";
+    } catch (e) {
+      return "signin";
+    }
+  });
   const [user, setUser] = useState(null);
   const [skipped, setSkipped] = useState(() => {
     try {
@@ -20,6 +29,26 @@ function App() {
   });
 
   useEffect(() => {
+    // keep auth state and initial routing in sync
+    const unsubAuth = onAuthChange((u) => {
+      setUser(u || null);
+      if (u) {
+        // signed in -> show home
+        setCurrentPage("home");
+      } else {
+        // not signed in -> if user didn't skip, show signin
+        try {
+          if (localStorage.getItem("skipAuth") !== "true") {
+            // ensure SignIn component is loaded
+            loadSignIn();
+            setCurrentPage("signin");
+          }
+        } catch (e) {
+          setCurrentPage("signin");
+        }
+      }
+    });
+
     const handleNavigateToManual = () => {
       setCurrentPage("manual");
     };
@@ -29,7 +58,15 @@ function App() {
     };
 
     const handleNavigateToSignIn = () => {
-      // dynamically load SignIn when needed
+      loadSignIn();
+    };
+
+    const handleNavigateToSignUp = () => {
+      loadSignUp();
+    };
+
+    // helper loaders so we can reuse them (defined here to capture setCurrentPage)
+    function loadSignIn() {
       import("./Pages/SignIn.jsx")
         .then((mod) => {
           window.__LoadedSignIn = mod && (mod.default || mod.SignIn);
@@ -38,10 +75,9 @@ function App() {
         .catch((err) => {
           console.error("Failed to load SignIn:", err);
         });
-    };
+    }
 
-    const handleNavigateToSignUp = () => {
-      // dynamically load SignUp when needed
+    function loadSignUp() {
       import("./Pages/SignUp.jsx")
         .then((mod) => {
           window.__LoadedSignUp = mod && (mod.default || mod.SignUp);
@@ -50,7 +86,7 @@ function App() {
         .catch((err) => {
           console.error("Failed to load SignUp:", err);
         });
-    };
+    }
 
     const handleNavigateToHome = () => {
       setCurrentPage("home");
@@ -78,6 +114,12 @@ function App() {
     const handleNavigateToVocabulary = () => {
       setCurrentPage("vocabulary");
     };
+    const handleNavigateToQuiz = () => {
+      setCurrentPage("quiz");
+    };
+    const handleNavigateToTools = () => {
+      setCurrentPage("tools");
+    };
 
     const handleNavigateToCalendar = () => {
       setCurrentPage("calendar");
@@ -94,14 +136,16 @@ function App() {
     window.addEventListener("navigate-to-manual", handleNavigateToManual);
     window.addEventListener("navigate-to-grammar", handleNavigateToGrammar);
     window.addEventListener("navigate-to-home", handleNavigateToHome);
-    window.addEventListener("navigate-to-signin", handleNavigateToSignIn);
-    window.addEventListener("navigate-to-signup", handleNavigateToSignUp);
+  window.addEventListener("navigate-to-signin", handleNavigateToSignIn);
+  window.addEventListener("navigate-to-signup", handleNavigateToSignUp);
   window.addEventListener("navigate-to-signout", handleSignOut);
   window.addEventListener("navigate-to-skip", handleSkip);
     window.addEventListener(
       "navigate-to-vocabulary",
       handleNavigateToVocabulary
     );
+  window.addEventListener("navigate-to-quiz", handleNavigateToQuiz);
+  window.addEventListener("navigate-to-tools", handleNavigateToTools);
     window.addEventListener("navigate-to-calendar", handleNavigateToCalendar);
     window.addEventListener("navigate-to-writing", handleNavigateToWriting);
     window.addEventListener("navigate-to-speaking", handleNavigateToSpeaking);
@@ -113,14 +157,17 @@ function App() {
         handleNavigateToGrammar
       );
       window.removeEventListener("navigate-to-home", handleNavigateToHome);
-      window.removeEventListener("navigate-to-signin", handleNavigateToSignIn);
-      window.removeEventListener("navigate-to-signup", handleNavigateToSignUp);
+    window.removeEventListener("navigate-to-signin", handleNavigateToSignIn);
+    window.removeEventListener("navigate-to-signup", handleNavigateToSignUp);
+    unsubAuth && unsubAuth();
   window.removeEventListener("navigate-to-signout", handleSignOut);
   window.removeEventListener("navigate-to-skip", handleSkip);
       window.removeEventListener(
         "navigate-to-vocabulary",
         handleNavigateToVocabulary
       );
+      window.removeEventListener("navigate-to-quiz", handleNavigateToQuiz);
+      window.removeEventListener("navigate-to-tools", handleNavigateToTools);
       window.removeEventListener(
         "navigate-to-calendar",
         handleNavigateToCalendar
@@ -143,6 +190,8 @@ function App() {
       {currentPage === "grammar" && <Grammar />}
       {currentPage === "manual" && <Grammar />}
       {currentPage === "vocabulary" && <Vocabulary />}
+  {currentPage === "quiz" && <Quiz />}
+    {currentPage === "tools" && <Tools />}
       {currentPage === "calendar" && <CalendarNotebook />}
       {currentPage === "writing" && <Writing />}
       {currentPage === "speaking" && <Speaking />}
